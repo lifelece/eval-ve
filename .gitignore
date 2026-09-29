@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.vite/
+
+# Secretos: jamas versionados.
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Cache de respuestas de modelos: puede pesar mucho y puede contener texto
+# de prompts de prueba. No es la fuente de verdad -- se regenera corriendo
+# el harness. Ver CLAUDE.md, regla especifica 5 (cache obligatoria).
+.cache/
+src/cache/tmp/
+**/cache-respuestas/
+
+# Preguntas privadas: el 20% de control de contaminacion NUNCA va al repo
+# publico. Ver CLAUDE.md, regla especifica 4, y ADR-001.
+data/privadas/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp

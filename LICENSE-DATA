@@ -1,0 +1,48 @@
+# Licencia de los datos
+
+Las preguntas del dataset de este proyecto — es decir, el contenido de
+`data/preguntas.jsonl` (y, cuando se publiquen, sus futuras versiones) — se
+publican bajo:
+
+## Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/
+
+Eres libre de compartir y adaptar estas preguntas, incluso comercialmente,
+siempre que des credito adecuado:
+
+> Preguntas de eval-ve (Luis Carlos Vasquez), CC BY 4.0
+> https://github.com/lifelece/eval-ve
+
+---
+
+## Sobre `corpus/` (textos legales oficiales): pregunta abierta, sin resolver
+
+Este `LICENSE-DATA` **no** afirma ningun regimen de derechos sobre los textos
+legales oficiales que se reunan en `corpus/` (leyes, reglamentos, Gacetas
+Oficiales de Venezuela). El estatus de derechos de autor de la normativa
+oficial venezolana no se investigo todavia — es trabajo explicito de la Fase
+1 (`docs/fases/FASE-1-CORPUS.md`), con Luis como responsable de resolverlo o
+de decidir como se documenta y se cita cada norma sin necesidad de redistribuir
+su texto integro.
+
+Hasta que la Fase 1 lo resuelva:
+
+- **No se asume** que los textos legales estan en dominio publico ni que
+  tienen una licencia abierta.
+- El corpus documenta, como minimo, `norma`, numero de **Gaceta Oficial**,
+  fecha y fuente/URL de cada texto — la practica de "guardar hechos + enlace,
+  nunca el texto integro del articulo" (regla 15 del estandar comun) es el
+  punto de partida por defecto mientras no haya una decision explicita en
+  sentido contrario.
+
+## Sobre `results/` (salidas del harness)
+
+Los archivos de `results/<modelo>/<fecha>.json` son datos generados por este
+proyecto (respuestas de modelos de terceros, calificaciones del juez LLM).
+Su licencia de publicacion se define en la Fase 5 (`docs/fases/FASE-5-PUBLICACION.md`)
+junto con el resto del checklist de publicacion; no esta decidida en la Fase 0.
+
+---
+
+**El codigo fuente se licencia por separado bajo MIT.** Ver [LICENSE](LICENSE).

@@ -1,0 +1,12 @@
+{
+  "name": "eval-ve",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Benchmark abierto de conocimiento normativo venezolano (tributos, aduanas, derecho mercantil) para modelos de IA",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {}
+}

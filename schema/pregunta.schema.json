@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/lifelece/eval-ve/schema/pregunta.schema.json",
+  "title": "Pregunta de eval-ve",
+  "description": "Esquema de cada entrada de data/preguntas.jsonl y de data/privadas/*.jsonl. Ver docs/adr/ADR-001-esquema-de-preguntas.md para el razonamiento completo. Estado: Propuesto, sin aprobar por Luis todavia.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "dominio",
+    "tipo",
+    "pregunta",
+    "respuesta",
+    "articulo_ref",
+    "norma",
+    "gaceta",
+    "dificultad",
+    "vigente",
+    "validado_por",
+    "fecha_validacion"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador unico y estable. Formato: <prefijo-dominio>-<correlativo de 3 digitos>. El correlativo nunca se reutiliza, incluso si una pregunta se retira (ver 'vigente').",
+      "pattern": "^(trib|aduanas|mercantil)-[0-9]{3,4}$",
+      "examples": ["trib-001", "aduanas-014", "mercantil-072"]
+    },
+    "dominio": {
+      "type": "string",
+      "description": "Rama del derecho que evalua la pregunta.",
+      "enum": ["tributario", "aduanas", "mercantil"]
+    },
+    "tipo": {
+      "type": "string",
+      "enum": ["opcion_multiple", "abierta"]
+    },
+    "pregunta": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Enunciado de la pregunta, en espanol."
+    },
+    "opciones": {
+      "type": "array",
+      "description": "Solo para tipo=opcion_multiple. 2 a 6 alternativas, sin duplicados.",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 2,
+      "maxItems": 6,
+      "uniqueItems": true
+    },
+    "respuesta": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Para opcion_multiple: el texto exacto de la opcion correcta (debe aparecer en 'opciones'). Para abierta: la respuesta de referencia que usa el juez LLM como rubrica base."
+    },
+    "articulo_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Articulo (o articulos) exacto que respalda la respuesta. Nunca inventado: debe existir literalmente en el texto registrado en corpus/. Ejemplo ficticio, no un articulo real: 'Articulo 99'.",
+      "examples": ["Articulo 99", "Articulos 14 y 15"]
+    },
+    "norma": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Nombre completo de la ley o reglamento. Ejemplo ficticio, no una norma real: 'Ley Organica Ficticia de Ejemplo'."
+    },
+    "gaceta": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Numero de Gaceta Oficial y fecha de la version de la norma usada para esta pregunta. Congela la pregunta a una foto fija de la norma; ver ADR-001 sobre reformas.",
+      "examples": ["Gaceta Oficial N.º 0.000.000 (ejemplo ficticio, fecha ficticia)"]
+    },
+    "dificultad": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "1 = basico, 2 = intermedio, 3 = avanzado."
+    },
+    "vigente": {
+      "type": "boolean",
+      "default": true,
+      "description": "false si la norma detras de esta pregunta fue reformada y la pregunta quedo congelada a una version anterior. Ver 'reemplazada_por'."
+    },
+    "reemplazada_por": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "id de la pregunta que reemplaza a esta tras una reforma normativa. Null mientras 'vigente' sea true."
+    },
+    "validado_por": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "Solo Luis llena este campo, y solo con su propio nombre. Null significa 'sin validar humano': la pregunta no cuenta en resultados publicables. Claude Code NUNCA escribe un valor aqui.",
+      "enum": [null, "Luis Carlos Vasquez"]
+    },
+    "fecha_validacion": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "Fecha ISO 8601 (AAAA-MM-DD) en que Luis valido la pregunta. Null mientras 'validado_por' sea null.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "tipo": { "const": "opcion_multiple" } } },
+      "then": { "required": ["opciones"] }
+    },
+    {
+      "if": { "properties": { "validado_por": { "const": null } } },
+      "then": { "properties": { "fecha_validacion": { "const": null } } }
+    },
+    {
+      "if": { "not": { "properties": { "validado_por": { "const": null } } } },
+      "then": { "not": { "properties": { "fecha_validacion": { "const": null } } } }
+    }
+  ]
+}
