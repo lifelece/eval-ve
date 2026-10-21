@@ -14,8 +14,8 @@ archivo dentro de `docs/adr/`.
 
 | ADR | Titulo | Estado |
 |---|---|---|
-| [ADR-001](ADR-001-esquema-de-preguntas.md) | Esquema de preguntas | Propuesto |
-| [ADR-002](ADR-002-stack-harness.md) | Stack del harness: Node+TS y LM Studio | Propuesto |
+| [ADR-001](ADR-001-esquema-de-preguntas.md) | Esquema de preguntas | Aceptado (2026-10-20) |
+| [ADR-002](ADR-002-stack-harness.md) | Stack del harness: Node+TS y LM Studio | Aceptado (2026-10-20) |
 
 ## Plantilla
 
