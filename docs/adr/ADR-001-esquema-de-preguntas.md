@@ -1,6 +1,6 @@
 # ADR-001 — Esquema de preguntas
 
-**Fecha:** 2026-09-29 · **Estado:** Propuesto — falta revision de Luis
+**Fecha:** 2026-09-29 · **Estado:** Aceptado (Luis, 2026-10-20)
 
 ## Contexto
 
