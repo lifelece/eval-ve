@@ -4,7 +4,7 @@ Fichas de metadatos de las normas **tributarias, aduaneras y mercantiles** que r
 
 **Estado: Fase 1, lista para el gate de Luis.** Ninguna ficha esta validada (`validado_por: null`). Las normas dudosas y las dudas abiertas estan en [docs/fases/REVISION-F1.md](../docs/fases/REVISION-F1.md).
 
-**Las fichas NO contienen el texto de las normas.** El regimen de derechos del texto integro esta abierto: ver [ADR-003](../docs/adr/ADR-003-regimen-de-derechos-del-corpus.md) (Propuesto).
+**Las fichas NO contienen el texto de las normas.** El regimen de derechos del texto integro tiene decision aceptada (texto integro fuera del repo, publicacion pospuesta): ver [ADR-003](../docs/adr/ADR-003-regimen-de-derechos-del-corpus.md) (Aceptado, 2026-10-26).
 
 ## Formato de cada ficha
 

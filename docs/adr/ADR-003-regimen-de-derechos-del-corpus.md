@@ -1,6 +1,6 @@
 # ADR-003 — Regimen de derechos de `corpus/` (textos legales)
 
-**Fecha:** 2026-10-26 · **Estado:** Propuesto (pendiente de Luis; no es asesoria legal)
+**Fecha:** 2026-10-26 · **Estado:** Aceptado (Luis, PR #2, 2026-10-26; no es asesoria legal)
 
 ## Contexto
 
@@ -14,14 +14,16 @@ Hallazgo de esta investigacion (a verificar contra la fuente primaria):
 
 Fuentes a abrir antes de aceptar: texto del art. 4 y del art. 138 en la Gaceta 4.638 Ext. (SAPI: `https://sapi.gob.ve/wp-content/uploads/2020/09/ley_derecho_de_autor.pdf`; WIPO Lex: `https://www.wipo.int/wipolex/en/text/500548`); Convenio de Berna (WIPO).
 
-## Decision (propuesta)
+## Decision (aceptada)
 
 Opcion recomendada, en dos pasos:
 
 1. **Ahora (F1 y F2):** `corpus/` publica solo **fichas de metadatos** (nombre, Gaceta, fecha, URL oficial, vigencia, `ultima_verificacion`). No se guarda ni se publica el texto integro. Es lo que ya hace F1 y no depende de resolver la pregunta de derechos.
-2. **Para escribir preguntas:** Luis (o el agente, bajo su gate) puede leer el texto desde la fuente oficial. Si hace falta tenerlo local para citar articulos, va a una carpeta **fuera de git** (`corpus/_textos/`, en `.gitignore`), con el PDF oficial de la Gaceta, nunca un texto consolidado de un tercero. Las preguntas citan `articulo_ref` y parafrasean; no copian articulos completos al dataset CC BY.
+2. **Para escribir preguntas:** Luis (o el agente, bajo su gate) puede leer el texto desde la fuente oficial. Si hace falta tenerlo local para citar articulos, va a una carpeta **fuera de git** (ruta documentada: `C:\dev\eval-ve-textos\`, fuera del arbol del repo; ver nota de F2), con el PDF oficial de la Gaceta, nunca un texto consolidado de un tercero. Las preguntas citan `articulo_ref` y parafrasean; no copian articulos completos al dataset CC BY.
 
 El texto integro de normas en el repo publico queda **pospuesto** hasta que Luis verifique el art. 4 (y el 138) en la Gaceta primaria y decida; dueno: Luis; revisar en el gate de F5 (Publicacion) a mas tardar.
+
+**Nota de F2 (2026-10-26):** al aceptarse el ADR, la ruta de textos locales queda fijada en `C:\dev\eval-ve-textos\` (fuera del repo, en vez de `corpus/_textos/`, para que ningun `git add` pueda alcanzarlos). Alli estan los PDF descargados de la Asamblea Nacional (Gacetas 6.507, 6.668, 6.687) y los textos extraidos para citar articulos; el Codigo de Comercio se leyo en una transcripcion de tercero (Directorio Legislativo), no en el PDF de la Gaceta, y se marca asi en `docs/fases/REVISION-F2.md`. Ningun texto va al dataset: solo `articulo_ref` y respuestas propias.
 
 ## Alternativas consideradas
 
@@ -35,7 +37,7 @@ El texto integro de normas en el repo publico queda **pospuesto** hasta que Luis
 - Las fichas llevan `texto_en_repo: no` y una URL oficial; si una URL cae, la ficha conserva Gaceta y fecha para reubicarla.
 - Una norma consolidada (p. ej. LOA 2020, art. 21 de la reforma) solo se usa desde la Gaceta oficial, no desde copias de terceros.
 - Riesgo aceptado: el dataset depende de que las URL oficiales sigan vivas; mitigacion: guardar el PDF oficial local y su fecha de descarga.
-- Trabajo futuro: `.gitignore` para `corpus/_textos/` (cambio pequeno, requiere OK de Luis por ser archivo fuera del plan).
+- Trabajo futuro: ninguno para `.gitignore`; los textos viven fuera del repo (ver nota de F2).
 
 ## Cuando reconsiderar
 

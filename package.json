@@ -8,5 +8,8 @@
   "engines": {
     "node": ">=20"
   },
-  "scripts": {}
+  "scripts": {
+    "validar": "node src/validar/validar-preguntas.mjs data/preguntas.jsonl --piloto",
+    "test": "node --test src/validar/validar-preguntas.test.mjs"
+  }
 }

@@ -16,7 +16,7 @@ archivo dentro de `docs/adr/`.
 |---|---|---|
 | [ADR-001](ADR-001-esquema-de-preguntas.md) | Esquema de preguntas | Aceptado (2026-10-20) |
 | [ADR-002](ADR-002-stack-harness.md) | Stack del harness: Node+TS y LM Studio | Aceptado (2026-10-20) |
-| [ADR-003](ADR-003-regimen-de-derechos-del-corpus.md) | Regimen de derechos de `corpus/` | Propuesto (2026-10-26) |
+| [ADR-003](ADR-003-regimen-de-derechos-del-corpus.md) | Regimen de derechos de `corpus/` | Aceptado (Luis, PR #2, 2026-10-26) |
 
 ## Plantilla
 
