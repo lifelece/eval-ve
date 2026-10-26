@@ -4,7 +4,7 @@
 > **Gate de salida:** 30 preguntas (10 por dominio) escritas y validadas,
 > revisadas por Luis pregunta por pregunta.
 
-**Tiempo estimado:** no fijado por la ficha · **Estado:** pendiente
+**Tiempo estimado:** no fijado por la ficha · **Estado:** borradores listos para el gate de Luis (2026-10-26); ver REVISION-F2.md
 
 ## Objetivo
 
