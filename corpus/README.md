@@ -1,16 +1,16 @@
 # corpus/
 
-Fichas de metadatos de las normas **tributarias, aduaneras y mercantiles** que respaldaran las preguntas del dataset, una ficha `.md` por norma con front-matter, por dominio.
+Fichas de metadatos de las normas **tributarias, aduaneras, mercantiles y cambiarias** que respaldaran las preguntas del dataset, una ficha `.md` por norma con front-matter, por dominio.
 
-**Estado: Fase 1, lista para el gate de Luis.** Ninguna ficha esta validada (`validado_por: null`). Las normas dudosas y las dudas abiertas estan en [docs/fases/REVISION-F1.md](../docs/fases/REVISION-F1.md).
+**Estado: Fase 1 y F1b (providencias SENIAT y normativa cambiaria), listas para el gate de Luis.** Ninguna ficha esta validada (`validado_por: null`). Las normas dudosas y las dudas abiertas estan en [docs/fases/REVISION-F1.md](../docs/fases/REVISION-F1.md) (23 fichas) y [docs/fases/REVISION-F1b.md](../docs/fases/REVISION-F1b.md) (16 fichas: providencias SENIAT, decretos de IGTF y carpeta `cambiario`).
 
 **Las fichas NO contienen el texto de las normas.** El regimen de derechos del texto integro tiene decision aceptada (texto integro fuera del repo, publicacion pospuesta): ver [ADR-003](../docs/adr/ADR-003-regimen-de-derechos-del-corpus.md) (Aceptado, 2026-10-26).
 
 ## Formato de cada ficha
 
-Front-matter YAML: `nombre`, `dominio`, `tipo`, `gaceta_numero`, `gaceta_tipo` (ordinaria/extraordinaria), `gaceta_fecha`, `fecha_inicio_vigencia`, `vigente` (si/no/dudosa), `derogada_o_reformada_por`, `vigilancia` (reformas anunciadas, opcional), `fuente` (URL primaria), `fuentes_adicionales`, `confianza` (alta/media/baja), `ultima_verificacion`, `texto_en_repo`, `validado_por`. Los tres campos `fuente`, `confianza` y `ultima_verificacion` siguen el contrato de procedencia de Arsenal (`schemas/procedencia.schema.json`, vocabulario `confianza-escala`). Un dato no verificado va como `[gaceta_pendiente]` o `[pendiente]`, nunca inventado.
+Front-matter YAML: `nombre`, `dominio`, `tipo`, `gaceta_numero`, `gaceta_tipo` (ordinaria/extraordinaria), `gaceta_fecha`, `fecha_inicio_vigencia`, `vigente` (si/no/dudosa), `derogada_o_reformada_por`, `vigilancia` (reformas anunciadas, opcional), `fuente` (URL primaria), `fuentes_adicionales`, `confianza` (alta/media/baja), `ultima_verificacion`, `texto_en_repo`, `validado_por`. Las fichas de F1b anaden `lectura` (`directa` o `indice-exa`: como se leyo la fuente; `indice-exa` = texto indexado por el buscador Exa, no la Gaceta abierta). Para normas publicadas pero aun no en vigor, `vigente: no` y la fecha futura en `fecha_inicio_vigencia`/`vigilancia` (decision D-1 pendiente en REVISION-F1b). Los tres campos `fuente`, `confianza` y `ultima_verificacion` siguen el contrato de procedencia de Arsenal (`schemas/procedencia.schema.json`, vocabulario `confianza-escala`). Un dato no verificado va como `[gaceta_pendiente]` o `[pendiente]`, nunca inventado.
 
-## Indice (23 normas: 9 tributario, 4 aduanas, 10 mercantil)
+## Indice (39 normas: 22 tributario, 4 aduanas, 10 mercantil, 3 cambiario)
 
 | Norma | Gaceta | Tipo G.O. | Fecha G.O. | Vigente | Ficha |
 |---|---|---|---|---|---|
@@ -37,3 +37,21 @@ Front-matter YAML: `nombre`, `dominio`, `tipo`, `gaceta_numero`, `gaceta_tipo` (
 | Ley de Reforma Parcial del Decreto 1.506 con Fuerza de Ley de Comercio Maritimo | 38.351 | ordinaria | 2006-01-05 | si | [mercantil/comercio-maritimo-2006.md](mercantil/comercio-maritimo-2006.md) |
 | Decreto con Rango, Valor y Fuerza de Ley Organica de Precios Justos | 6.202 | extraordinaria | 2015-11-08 | si | [mercantil/precios-justos-2015.md](mercantil/precios-justos-2015.md) |
 | Decreto con Rango, Valor y Fuerza de Ley Antimonopolio | 6.151 | extraordinaria | 2014-11-18 | si | [mercantil/antimonopolio-2014.md](mercantil/antimonopolio-2014.md) |
+| Providencia Administrativa SNAT/2025/000054 mediante la cual se designan Agentes de Retenc... | 43.171 | ordinaria | 2025-07-16 | si | [tributario/retencion-iva-snat-2025-000054.md](tributario/retencion-iva-snat-2025-000054.md) |
+| Decreto N° 1.808 — Reglamento Parcial de la Ley de Impuesto sobre la Renta en materia de R... | 36.203 | ordinaria | 1997-05-12 | dudosa | [tributario/retencion-islr-decreto-1808-1997.md](tributario/retencion-islr-decreto-1808-1997.md) |
+| Providencia Administrativa SNAT/2023/00005 sobre Sujetos Pasivos Especiales | 42.588 | ordinaria | 2023-03-14 | si | [tributario/sujetos-pasivos-especiales-snat-2023-00005.md](tributario/sujetos-pasivos-especiales-snat-2023-00005.md) |
+| Providencia Administrativa SNAT/2026/00099 sobre Sujetos Pasivos Especiales | 43.485 | ordinaria | 2026-10-22 | no | [tributario/sujetos-pasivos-especiales-snat-2026-00099.md](tributario/sujetos-pasivos-especiales-snat-2026-00099.md) |
+| Providencia Administrativa SNAT/2011/00071 mediante la cual se establece las Normas Genera... | 39.795 | ordinaria | 2011-11-08 | si | [tributario/facturacion-snat-2011-00071.md](tributario/facturacion-snat-2011-00071.md) |
+| Providencia Administrativa SNAT/2018/0141 que establece las Normas relativas a Imprentas y... | 41.518 | ordinaria | 2018-11-06 | si | [tributario/imprentas-maquinas-fiscales-snat-2018-0141.md](tributario/imprentas-maquinas-fiscales-snat-2018-0141.md) |
+| Providencia Administrativa SNAT/2024/000102 que regula la utilización de Medios Digitales ... | 43.032 | ordinaria | 2024-12-19 | si | [tributario/facturacion-medios-digitales-snat-2024-000102.md](tributario/facturacion-medios-digitales-snat-2024-000102.md) |
+| Providencia Administrativa SNAT/2026/00093 mediante la cual se establece las Normas Genera... | 43.484 | ordinaria | 2026-10-21 | no | [tributario/facturacion-snat-2026-00093.md](tributario/facturacion-snat-2026-00093.md) |
+| Providencia Administrativa SNAT/2022/000013 mediante la cual se designan a los Sujetos Pas... | 42.339 | ordinaria | 2022-03-17 | si | [tributario/igtf-percepcion-snat-2022-000013.md](tributario/igtf-percepcion-snat-2022-000013.md) |
+| Decreto N° 4.647 mediante el cual se exonera del pago del Impuesto a las Grandes Transacci... | 6.689 | extraordinaria | 2022-02-25 | si | [tributario/igtf-decreto-4647-exoneracion-2022.md](tributario/igtf-decreto-4647-exoneracion-2022.md) |
+| Decreto N° 4.972 mediante el cual se fija en cero por ciento (0%) la alícuota del Impuesto... | 6.821 | extraordinaria | 2024-07-12 | si | [tributario/igtf-decreto-4972-alicuota-2024.md](tributario/igtf-decreto-4972-alicuota-2024.md) |
+| Providencia Administrativa SNAT/2025/000048 mediante la cual se reajusta el valor de la Un... | 43.140 | ordinaria | 2025-06-02 | si | [tributario/unidad-tributaria-snat-2025-000048.md](tributario/unidad-tributaria-snat-2025-000048.md) |
+| Providencia Administrativa SNAT/2026/00080 mediante la cual se dicta la reforma de la Prov... | 43.435 | ordinaria | 2026-08-12 | si | [tributario/rif-snat-2026-00080.md](tributario/rif-snat-2026-00080.md) |
+| Convenio Cambiario N° 1 | 6.405 | extraordinaria | 2018-09-07 | si | [cambiario/convenio-cambiario-1-2018.md](cambiario/convenio-cambiario-1-2018.md) |
+| Convenio Cambiario N° 20 (cuentas en moneda extranjera) y su modificación | 39.968 | ordinaria | 2012-07-19 | no | [cambiario/convenio-cambiario-20-2012.md](cambiario/convenio-cambiario-20-2012.md) |
+| Decreto Constituyente Derogatorio del Régimen Cambiario y sus Ilícitos | 41.452 | ordinaria | 2018-08-02 | si | [cambiario/decreto-constituyente-derogatorio-regimen-cambiario-2018.md](cambiario/decreto-constituyente-derogatorio-regimen-cambiario-2018.md) |
+
+Las 16 filas finales son de F1b (carpetas `tributario/` y `cambiario/`); detalle en [REVISION-F1b.md](../docs/fases/REVISION-F1b.md).
