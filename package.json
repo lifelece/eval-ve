@@ -10,6 +10,10 @@
   },
   "scripts": {
     "validar": "node src/validar/validar-preguntas.mjs data/preguntas.jsonl --piloto",
-    "test": "node --test src/validar/validar-preguntas.test.mjs"
+    "test": "node --test \"src/**/*.test.mjs\" \"src/**/*.test.ts\"",
+    "piloto": "node src/runner/cli.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0"
   }
 }

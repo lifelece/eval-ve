@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "nota": "Precios en USD por millon de tokens (entrada/salida). Haiku 5.5: precio de la skill claude-api (cache 2026-10-06), valido para prompts de hasta 100K tokens; Luis debe confirmarlo en la consola de Anthropic antes de la corrida. LM Studio corre en local: costo 0.",
+  "tope_gasto_usd_por_defecto": 2,
+  "juez_por_defecto": "haiku",
+  "modelos": {
+    "haiku": {
+      "proveedor": "anthropic",
+      "id": "claude-haiku-5-5",
+      "precio_usd_por_mtok": { "entrada": 0.1, "salida": 0.5 },
+      "max_tokens": 2000,
+      "effort": "low"
+    },
+    "lmstudio": {
+      "proveedor": "lmstudio",
+      "id": "[modelo_cargado_en_lm_studio]",
+      "precio_usd_por_mtok": { "entrada": 0, "salida": 0 },
+      "max_tokens": 1500,
+      "temperature": 0
+    }
+  }
+}
