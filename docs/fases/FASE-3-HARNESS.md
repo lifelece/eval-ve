@@ -3,7 +3,7 @@
 > **Gate de entrada:** Fase 2 aprobada (30 preguntas piloto validadas).
 > **Gate de salida:** corrida piloto con 2 modelos revisada por Luis.
 
-**Tiempo estimado:** no fijado por la ficha · **Estado:** pendiente
+**Tiempo estimado:** no fijado por la ficha · **Estado:** en curso, en seco (runner probado con clientes simulados; corrida piloto pendiente de Luis)
 
 ## Objetivo
 
@@ -30,6 +30,37 @@ Probarlo contra las 30 preguntas del piloto con al menos 2 modelos.
 - `results/<modelo>/<fecha>.json` de la corrida piloto con al menos 2 modelos
   (idealmente uno via API y uno local via LM Studio, para probar ambos
   caminos).
+
+## Runtime local: Ollama o LM Studio
+
+El alias `lmstudio` habla el protocolo OpenAI (`/models`, `/chat/completions`),
+asi que sirve tambien Ollama sin cambiar codigo, solo con variables de entorno
+(decision tecnica del Director, 2026-10-30; local, sin coste):
+
+```
+LMSTUDIO_BASE_URL=http://localhost:11434/v1
+LMSTUDIO_MODEL=qwen2.5:3b
+```
+
+**Corrida de humo local (2026-10-30, cero gasto):** 3 preguntas del piloto, con
+Qwen como modelo y como juez (sin cliente de Anthropic, sin clave):
+
+```
+LMSTUDIO_BASE_URL=http://localhost:11434/v1 LMSTUDIO_MODEL=qwen2.5:3b \
+  node src/runner/cli.ts --modelos lmstudio --juez lmstudio --limite 3 --tope 0 --cache .cache/humo
+```
+
+Resultado: 3/3 respondidas, 0 errores, gasto $0.0000, ~37 s en total (3
+respuestas + 1 juicio, con carga en frio del modelo). Es solo una prueba de
+conexion: un juez de 3B no es fiable; la corrida real usa Haiku como juez.
+El runner no obliga a usar 2 modelos, asi que no hizo falta el simulado.
+
+**Comando de la corrida real (lo ejecuta Luis con su clave; tope 2 USD):**
+
+```
+ANTHROPIC_API_KEY=<tu_clave> LMSTUDIO_BASE_URL=http://localhost:11434/v1 LMSTUDIO_MODEL=qwen2.5:3b \
+  npm run piloto -- --modelos haiku,lmstudio --tope 2
+```
 
 ## Pasos para Claude Code
 
