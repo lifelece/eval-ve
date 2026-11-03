@@ -19,10 +19,10 @@ punto con Luis en una frase si no hay constancia de que ya se dio luz verde.
 
 | Fase | Archivo | Estado |
 |---|---|---|
-| 0 — Setup | [FASE-0-SETUP.md](FASE-0-SETUP.md) | En cierre, pendiente de aprobacion de Luis |
-| 1 — Corpus | [FASE-1-CORPUS.md](FASE-1-CORPUS.md) | Pendiente — espera gate de F0 y calendario del Radar |
-| 2 — Piloto | [FASE-2-PILOTO.md](FASE-2-PILOTO.md) | Pendiente |
-| 3 — Harness | [FASE-3-HARNESS.md](FASE-3-HARNESS.md) | Pendiente |
+| 0 — Setup | [FASE-0-SETUP.md](FASE-0-SETUP.md) | **Cerrada** (PR #1, aprobada por Luis, 2026-10-20) |
+| 1 — Corpus | [FASE-1-CORPUS.md](FASE-1-CORPUS.md) | **Cerrada** (PR #2 mergeado 2026-10-26; F1b: PR #4, 16 normas mas, 2026-10-26) |
+| 2 — Piloto | [FASE-2-PILOTO.md](FASE-2-PILOTO.md) | **Cerrada** (PR #3: las 30 preguntas aprobadas por Luis, 26/10) |
+| 3 — Harness | [FASE-3-HARNESS.md](FASE-3-HARNESS.md) | **En curso, en seco**: runner construido y probado con clientes simulados; falta la corrida piloto (gate de Luis) |
 | 4 — Escala | [FASE-4-ESCALA.md](FASE-4-ESCALA.md) | Pendiente |
 | 5 — Publicacion | [FASE-5-PUBLICACION.md](FASE-5-PUBLICACION.md) | Pendiente |
 | 6 — LinkedIn | [FASE-6-LINKEDIN.md](FASE-6-LINKEDIN.md) | Pendiente — sin STOP gate |
