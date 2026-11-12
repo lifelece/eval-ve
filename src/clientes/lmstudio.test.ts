@@ -71,3 +71,11 @@ test('lmstudio: caida a mitad de corrida tambien es fatal con el mismo mensaje',
   await c.preparar();
   await assert.rejects(c.generar(pet), /Arranca LM Studio/);
 });
+
+test('lmstudio: un id concreto en la config elige el modelo (varios locales en una corrida); un id que el servidor no lista no cuenta', async () => {
+  const fijo = { ...config, id: 'b' };
+  assert.equal(await crearClienteLmStudio(fijo, { fetch: fetchCon(modelos('a', 'b')).f, env: { LMSTUDIO_MODEL: 'a' } }).preparar(), 'b');
+  await assert.rejects(crearClienteLmStudio({ ...config, id: 'z' }, { fetch: fetchCon(modelos('a', 'b')).f, env: {} }).preparar(), /LMSTUDIO_MODEL/);
+  const marcador = { ...config, id: '[modelo_cargado_en_lm_studio]' };
+  assert.equal(await crearClienteLmStudio(marcador, { fetch: fetchCon(modelos('a', 'b')).f, env: { LMSTUDIO_MODEL: 'a' } }).preparar(), 'a');
+});
