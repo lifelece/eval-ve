@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eval-ve - Tabla de posiciones</title>
+<meta name="description" content="Benchmark abierto de conocimiento normativo venezolano (tributos, aduanas y derecho mercantil) para modelos de IA.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cab">
+  <div class="fila">
+    <h1 id="t-titulo">eval-ve</h1>
+    <div class="idiomas" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+  <p id="t-sub" class="sub"></p>
+</header>
+
+<aside class="aviso" role="note" aria-labelledby="t-aviso-h">
+  <strong id="t-aviso-h"></strong>
+  <span id="t-aviso"></span>
+</aside>
+
+<main>
+  <nav id="filtros" class="filtros" aria-label="Dominio"></nav>
+  <p id="meta" class="meta"></p>
+  <div id="vacio" class="vacio" hidden></div>
+  <ol id="lista" class="lista"></ol>
+
+  <section class="limites" aria-labelledby="t-lim-h">
+    <h2 id="t-lim-h"></h2>
+    <ul id="t-lim"></ul>
+  </section>
+</main>
+
+<footer class="pie">
+  <p id="t-pie"></p>
+</footer>
+<noscript><p class="aviso">Esta pagina necesita JavaScript / This page needs JavaScript.</p></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>
