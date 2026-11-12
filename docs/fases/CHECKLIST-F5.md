@@ -1,12 +1,12 @@
 # Checklist de publicacion (Fase 5)
 
 > Para Luis. Sintaxis PowerShell, desde la raiz del repo. Nada de esto lo ejecuta Claude Code: merge, deploy y subida a Hugging Face son tuyos.
-> Estado de la F5 "en seco": todo construido y probado con resultados de ejemplo (fixtures). Aun no hay corridas reales en `results/`.
+> Estado al 2026-11-12: F4 cerrada. Hay una corrida real en `results/` (150 preguntas, 4 modelos), `web/datos.json` esta generado y las 150 preguntas tienen `validado_por`. Pasos 1, 2 y 4 repetidos por Claude Code ese dia sobre `main` (ver el final).
 
 ## 0. Antes de nada
 
-- [ ] Gate de F4 aprobado (150 preguntas, 4-6 modelos, revision humana del 20%). Hoy: piloto de 30 preguntas, 0 con `validado_por`.
-- [ ] Corridas reales hechas por ti (con gasto) y guardadas en `results/<modelo>/<fecha>.json`.
+- [x] Gate de F4 aprobado (2026-11-12): 150 preguntas, 4 modelos, revision humana del juez y 150 preguntas selladas.
+- [x] Corridas reales guardadas en `results/<modelo>/2026-11-12_151044.json`.
 
 ```powershell
 git status
@@ -120,3 +120,10 @@ Select-String -Path CITATION.cff -Pattern "pendiente"
 - Archivos rastreados que coinciden con `.env`, `privadas` o `.cache`: solo `.env.example` (claves vacias) y `src/cache/*` (codigo).
 - `.env`, `data/privadas/` y `.cache/` nunca estuvieron en el historial.
 - `git grep` de palabras de negocios y uso privado del autor: vacio.
+
+## Auditoria repetida (2026-11-12, `main` tras el PR #12)
+
+- Claves y tokens en el arbol y en todo el historial: 0 coincidencias.
+- Archivos rastreados que coinciden con `.env`, `privadas` o `.cache`: solo `.env.example`. Nunca estuvieron en el historial.
+- `git ls-files data`: solo `README.md` y `preguntas.jsonl`. Palabras de negocios o uso privado del autor: 0.
+- `results/`, `web/` y `data/` no contienen rutas locales ni nombres de usuario del equipo.

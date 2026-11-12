@@ -18,8 +18,6 @@ size_categories:
 
 # eval-ve (borrador de dataset card)
 
-> BORRADOR para Luis. No se ha subido nada a Hugging Face. Completar los `[placeholder]` antes de publicar.
-
 > **Aviso: esto NO es asesoria legal, fiscal ni aduanera.** Es un conjunto de preguntas para medir conocimiento normativo de modelos de IA. Un buen resultado no sustituye a un abogado, a un contador ni a un agente aduanal. Ver `DISCLAIMER.md` en el repositorio.
 
 ## Que es
@@ -28,11 +26,11 @@ Preguntas sobre normativa venezolana en tres dominios: `tributario`, `aduanas` y
 
 Cada registro tiene: `id`, `dominio`, `tipo`, `pregunta`, `opciones` (solo opcion multiple), `respuesta`, `articulo_ref`, `norma`, `gaceta`, `dificultad`, `vigente`, `reemplazada_por`, `validado_por`, `fecha_validacion`. El esquema esta en `schema/pregunta.schema.json` del repositorio (ADR-001).
 
-Archivo: `preguntas.jsonl` (JSON Lines, un objeto por pregunta). Version del conjunto: `[version_pendiente]`. Numero de preguntas publicadas: `[n_pendiente]`.
+Archivo: `preguntas.jsonl` (JSON Lines, un objeto por pregunta). Version del conjunto: `0.1.0` (2026-11-12). Numero de preguntas publicadas: 150 (50 por dominio; 106 de opcion multiple y 44 abiertas).
 
 ## Procedencia
 
-Las preguntas las redacta el autor a partir de textos normativos oficiales vigentes, y cada una cita articulo, norma y Gaceta Oficial. El campo `validado_por` solo lo llena el autor tras verificar la pregunta contra la fuente; vacio significa sin validacion humana y esa pregunta no cuenta en resultados publicables. Estado de validacion a la fecha de este borrador: `[validadas_pendiente]` de `[n_pendiente]` (el piloto de 30 preguntas aun no tenia ninguna validada).
+Las preguntas se redactaron con asistencia de un modelo de IA a partir de textos normativos oficiales vigentes, y el autor las valido. Cada una cita articulo, norma y Gaceta Oficial, y un script comprueba que el fragmento que la sostiene aparece literalmente en el texto citado. El campo `validado_por` solo lo llena el autor tras verificar la pregunta contra la fuente; vacio significa sin validacion humana y esa pregunta no cuenta en resultados publicables. Estado de validacion al 2026-11-12: 150 de 150 (las 30 del piloto, revisadas una por una el 2026-10-26; las 120 restantes, selladas por el autor el 2026-11-12). Limite conocido: las preguntas del Codigo de Comercio parten de una transcripcion de un tercero, no de la Gaceta.
 
 El dataset no copia el texto integro de las leyes. El regimen de derechos de los textos de `corpus/` se documenta en ADR-003 del repositorio.
 

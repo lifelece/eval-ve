@@ -12,11 +12,10 @@ dataset, script de evaluacion (harness) y una tabla de posiciones publica.
 
 Proyecto personal, en solitario, tiempo parcial. Autor: Luis Carlos Vasquez.
 
-**Por que existe.** Los roles de AI Training & Data Quality estan entre los
-remotos mejor pagados en LATAM; escribir evals es una habilidad escasa. Este
-proyecto convierte lo que Luis estudio (Legislacion Fiscal, Trafico y Aduana,
-Legislacion Mercantil) en un activo tecnico demostrable. El README en ingles es
-ademas su practica: muchos de esos roles piden ingles.
+**Por que existe.** Escribir evaluaciones de modelos es una habilidad escasa, y casi no hay
+ninguna sobre normativa venezolana. Este proyecto convierte lo que el autor estudio
+(Legislacion Fiscal, Trafico y Aduana, Legislacion Mercantil) en un conjunto de preguntas
+verificable, con metodologia publica. El README va tambien en ingles.
 
 **Encuadre honesto:** es un benchmark de conocimiento normativo con metodologia
 publica y trazable. NO es asesoria legal, fiscal ni aduanera — ver
