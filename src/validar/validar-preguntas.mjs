@@ -74,22 +74,45 @@ export function validarCorpus(p, fichas) {
   return e;
 }
 
-export function validarLineas(texto, { fichas = null, esperado = null } = {}) {
+// Sesgo de longitud: si la correcta es casi siempre la mas larga (o la mas corta), un modelo
+// acierta sin saber derecho. Solo opcion multiple fuera del piloto (correlativo > 10).
+export const UMBRAL_SESGO = 0.35;
+export function sesgoLongitud(preguntas) {
+  const om = preguntas.filter((p) => p && p.tipo === 'opcion_multiple' && Array.isArray(p.opciones)
+    && Number(String(p.id).split('-')[1]) > 10 && p.opciones.includes(p.respuesta));
+  if (!om.length) return [];
+  let larga = 0, corta = 0;
+  for (const p of om) {
+    const otras = p.opciones.filter((o) => o !== p.respuesta).map((o) => o.length);
+    if (p.respuesta.length > Math.max(...otras)) larga++;
+    if (p.respuesta.length < Math.min(...otras)) corta++;
+  }
+  const e = [];
+  const pct = (n) => `${n}/${om.length} (${Math.round((100 * n) / om.length)} %)`;
+  if (larga / om.length > UMBRAL_SESGO) e.push(`sesgo de longitud: la correcta es estrictamente la mas larga en ${pct(larga)}; maximo ${UMBRAL_SESGO * 100} %`);
+  if (corta / om.length > UMBRAL_SESGO) e.push(`sesgo de longitud: la correcta es estrictamente la mas corta en ${pct(corta)}; maximo ${UMBRAL_SESGO * 100} %`);
+  return e;
+}
+
+export function validarLineas(texto, { fichas = null, esperado = null, sesgo = false } = {}) {
   const resultados = [];
   const ids = new Set();
   const conteo = {};
+  const todas = [];
   texto.split('\n').filter((l) => l.trim()).forEach((linea, i) => {
     let p;
     try { p = JSON.parse(linea); } catch { resultados.push({ linea: i + 1, id: '?', errores: ['JSON invalido'] }); return; }
     const errores = validarPregunta(p);
     if (ids.has(p.id)) errores.push('id repetido');
     ids.add(p.id);
+    todas.push(p);
     if (fichas) errores.push(...validarCorpus(p, fichas));
     conteo[p.dominio] = (conteo[p.dominio] || 0) + 1;
     resultados.push({ linea: i + 1, id: p.id, errores });
   });
   const globales = [];
   if (esperado) for (const [d, n] of Object.entries(esperado)) if ((conteo[d] || 0) !== n) globales.push(`${d}: ${conteo[d] || 0} preguntas, se esperaban ${n}`);
+  if (sesgo) globales.push(...sesgoLongitud(todas));
   return { resultados, conteo, globales };
 }
 
@@ -113,7 +136,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const porDefecto = modo === 'privadas' ? join(RAIZ, 'data', 'privadas', 'preguntas-privadas.jsonl') : join(RAIZ, 'data', 'preguntas.jsonl');
   const archivo = args.find((a) => !a.startsWith('--')) || porDefecto;
   const { resultados, conteo, globales } = validarLineas(readFileSync(archivo, 'utf8'), {
-    fichas: cargarFichas(), esperado: modo ? ESPERADOS[modo] : null });
+    fichas: cargarFichas(), esperado: modo ? ESPERADOS[modo] : null, sesgo: modo === 'escala' || modo === 'privadas' });
   if (modo === 'privadas') globales.push(...colisiones(readFileSync(archivo, 'utf8'), readFileSync(join(RAIZ, 'data', 'preguntas.jsonl'), 'utf8')));
   let malas = 0;
   for (const r of resultados) if (r.errores.length) { malas++; console.error(`${r.id} (linea ${r.linea}): ${r.errores.join('; ')}`); }

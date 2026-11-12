@@ -18,7 +18,7 @@
 | mercantil | 50 | 40 | 35 | 15 | 14 / 22 / 14 |
 | **total** | 150 | 120 | 106 | 44 | 44 / 66 / 40 |
 
-Reparto por tipo y dificultad aproximado al del piloto (7/3 y 11/12/7): las nuevas quedan ~71 % opcion multiple, ~29 % abierta y algo mas cargadas hacia dificultad 2-3. Posiciones de la respuesta correcta repartidas entre las 4 opciones.
+Reparto por tipo y dificultad aproximado al del piloto (7/3 y 11/12/7): las nuevas quedan ~71 % opcion multiple, ~29 % abierta y algo mas cargadas hacia dificultad 2-3. Posiciones de la respuesta correcta repartidas entre las 4 opciones (22 / 22 / 19 / 22 en las nuevas).
 
 ## 3. Como revisarlo por muestreo (propuesta)
 
@@ -27,7 +27,7 @@ Muestra estratificada de **24 preguntas (20 % de las 120 nuevas)**: las de corre
 ## 4. Autorrevision y limites conocidos
 
 - Se releyo cada pregunta contra su fragmento. Se corrigio la base imponible del IVA en importacion (art. 21) para no omitir los impuestos nacionales del art. 20 y se evito toda pregunta sobre alicuotas vigentes (IVA, IGTF) porque cambian por decreto.
-- **Sesgo de longitud:** en las opciones multiples se igualo la longitud de las opciones (se reescribieron 37 de 85 por tener la correcta mucho mas larga), pero la correcta sigue siendo la mas larga en ~59 % de los casos (azar con 4 opciones: 25 %). Un modelo puede aprovecharlo; conviene vigilarlo en F4 (comparar el acierto con y sin pista de longitud) o igualar mas en la revision.
+- **Sesgo de longitud (corregido en la vuelta 1):** la opcion correcta era la mas larga en ~59 % de las opciones multiples nuevas. Se alargaron distractores (falsos segun el articulo citado) en 30 preguntas publicas y 3 privadas, sin tocar la respuesta correcta ni su fragmento. Ahora, entre las 85 opciones multiples nuevas, la correcta es estrictamente la mas larga en 17 (20 %) y la mas corta en 15 (18 %); en las 21 privadas, 4 (19 %) y 6 (29 %). El validador (`--escala` y `--privadas`) falla si alguno de los dos porcentajes supera el 35 % (pruebas incluidas).
 - **Norma sin texto local:** ISLR 2015 (la AN la sirve como imagen y la G.O. 6.210 trae el decreto truncado), Mercado de Valores (PDF imagen), providencias del SENIAT y normativa cambiaria (sin texto local, y `cambiario` no existe como dominio en el esquema) no aportan preguntas nuevas. La unica pregunta de ISLR sigue siendo `trib-010`. Aduanas usa una sola norma (la LOA 2020); se evitaron los articulos que la reforma constituyente modifico.
 - El esquema no cambia (`additionalProperties: false`); el fragmento y la lectura viven solo en esta hoja.
 

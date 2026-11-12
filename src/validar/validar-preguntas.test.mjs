@@ -59,3 +59,40 @@ test('colisiones: id repetido o enunciado repetido entre privadas y publicas', (
   assert.ok(colisiones(mk('trib-001', 'tributario', { pregunta: 'otra' }), pub).some((e) => e.includes('id')));
   assert.ok(colisiones(mk('trib-9002', 'tributario', { pregunta: 'P trib-001' }), pub).some((e) => e.includes('enunciado')));
 });
+
+// --- F4: sesgo de longitud de la opcion correcta ---
+import { sesgoLongitud, UMBRAL_SESGO } from './validar-preguntas.mjs';
+
+const om = (id, correcta, otras, extra = {}) => ({ ...base(), id, tipo: 'opcion_multiple', respuesta: correcta, opciones: [...otras, correcta], ...extra });
+const largas = 'x'.repeat(30), cortas = 'y'.repeat(10), media = 'z'.repeat(20);
+
+test('sesgo: umbral del 35 %', () => assert.equal(UMBRAL_SESGO, 0.35));
+test('sesgo: la correcta siempre la mas larga falla', () => {
+  const ps = Array.from({ length: 10 }, (_, i) => om(`trib-${100 + i}`, largas, [cortas, media, 'w'.repeat(15)]));
+  const e = sesgoLongitud(ps);
+  assert.ok(e.some((x) => x.includes('mas larga')));
+});
+test('sesgo: la correcta siempre la mas corta falla', () => {
+  const ps = Array.from({ length: 10 }, (_, i) => om(`trib-${100 + i}`, cortas, [largas, media, 'w'.repeat(25)]));
+  assert.ok(sesgoLongitud(ps).some((x) => x.includes('mas corta')));
+});
+test('sesgo: mezcla equilibrada pasa', () => {
+  const ps = [];
+  for (let i = 0; i < 10; i++) ps.push(om(`trib-${100 + i}`, i < 3 ? largas : i < 6 ? cortas : media, i < 3 ? [cortas, media, 'w'.repeat(15)] : i < 6 ? [largas, media, 'w'.repeat(25)] : [largas, cortas, 'w'.repeat(20)]));
+  assert.deepEqual(sesgoLongitud(ps), []);
+});
+test('sesgo: empate con la mas larga no cuenta como estrictamente mas larga', () => {
+  const ps = Array.from({ length: 10 }, (_, i) => om(`trib-${100 + i}`, largas, [largas.replace(/x$/, 'q'), media, cortas]));
+  assert.deepEqual(sesgoLongitud(ps), []);
+});
+test('sesgo: ignora piloto (correlativo <= 10) y abiertas', () => {
+  const piloto = Array.from({ length: 10 }, (_, i) => om(`trib-${String(i + 1).padStart(3, '0')}`, largas, [cortas, media, 'w'.repeat(15)]));
+  assert.deepEqual(sesgoLongitud(piloto), []);
+  const abiertas = Array.from({ length: 10 }, (_, i) => ({ ...base(), id: `trib-${100 + i}`, tipo: 'abierta', opciones: undefined }));
+  assert.deepEqual(sesgoLongitud(abiertas), []);
+});
+test('sesgo: validarLineas lo aplica solo si se pide', () => {
+  const l = Array.from({ length: 10 }, (_, i) => JSON.stringify(om(`trib-${100 + i}`, largas, [cortas, media, 'w'.repeat(15)]))).join('\n');
+  assert.deepEqual(validarLineas(l, {}).globales, []);
+  assert.ok(validarLineas(l, { sesgo: true }).globales.some((x) => x.includes('mas larga')));
+});
