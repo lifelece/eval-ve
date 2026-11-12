@@ -12,7 +12,8 @@
     "validar": "node src/validar/validar-preguntas.mjs data/preguntas.jsonl --escala",
     "test": "node --test \"src/**/*.test.mjs\" \"src/**/*.test.ts\" \"scripts/**/*.test.mjs\"",
     "verificar-citas": "node scripts/verificar-citas.mjs",
-    "piloto": "node src/runner/cli.ts"
+    "piloto": "node src/runner/cli.ts",
+    "web:datos": "node scripts/construir-web.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.133.0"

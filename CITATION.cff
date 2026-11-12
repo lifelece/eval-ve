@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Si usas este benchmark o su dataset, cita como se indica abajo. / If you use this benchmark or its dataset, please cite it as below."
+title: "eval-ve: benchmark de conocimiento normativo venezolano (tributos, aduanas y derecho mercantil)"
+type: dataset
+authors:
+  - family-names: "Vasquez"
+    given-names: "Luis Carlos"
+repository-code: "https://github.com/lifelece/eval-ve"
+url: "https://github.com/lifelece/eval-ve"
+license: MIT
+abstract: "Benchmark abierto que mide cuan bien responden los modelos de IA preguntas sobre normativa venezolana (tributos, aduanas y derecho mercantil). Cada pregunta cita su articulo y su Gaceta Oficial. No es asesoria legal, fiscal ni aduanera. Codigo bajo MIT; preguntas bajo CC BY 4.0 (ver LICENSE-DATA)."
+keywords:
+  - benchmark
+  - evaluation
+  - legal
+  - Venezuela
+  - tax
+  - customs
+  - commercial law
+# Pendiente de Luis al publicar (no inventar):
+# version: "[version_pendiente]"
+# date-released: "[AAAA-MM-DD_pendiente]"
+# doi: "[doi_huggingface_pendiente]"
