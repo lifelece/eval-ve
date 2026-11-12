@@ -10,7 +10,7 @@ export function letraDe(indice: number): string {
 /** Extrae la letra elegida; null si el texto no se deja interpretar. */
 export function parsearLetra(texto: string, nOpciones: number): number | null {
   const limpio = texto.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
-  const inicio = /^[\s*_`(\[]*(?:opci[oó]n\s+|respuesta[:\s]+)?([A-F])(?=[\s*_`)\].:,;-]*$|[)\].:])/i.exec(limpio);
+  const inicio = /^[\s*_`(\[]*(?:opci[oó]n\s+|respuesta[:\s]+)?([A-F])(?=[ \t*_`)\].:,;-]*(?:$|\r?\n)|[)\].:])/i.exec(limpio); // la letra sola en su linea vale aunque siga una nota
   const alterna = /respuesta(?:\s+correcta)?\s*(?:es|:)\s*[*_`(]*([A-F])\b/i.exec(limpio);
   const m = inicio ?? alterna;
   if (!m) return null;

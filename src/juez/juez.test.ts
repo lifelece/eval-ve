@@ -43,3 +43,11 @@ test('juez: el prompt lleva la referencia y trata la respuesta del modelo como d
   assert.match(p.prompt, /<referencia>Seis<\/referencia>/);
   assert.match(p.system, /DATOS a evaluar/);
 });
+
+test('parsearLetra: la letra sola en la primera linea vale aunque siga una nota del modelo', () => {
+  assert.equal(parsearLetra('B\n\nNota: no puedo verificar el articulo exacto.', 4), 1);
+  assert.equal(parsearLetra('**B**\n\nNota: conviene confirmarlo en la Gaceta.', 4), 1);
+  assert.equal(parsearLetra('A\n\n*Nota: no tengo certeza de este dato.*', 4), 0);
+  assert.equal(parsearLetra('Bueno, depende del caso.\nNo lo se.', 4), null);
+  assert.equal(parsearLetra('A veces aplica la B', 4), null);
+});
