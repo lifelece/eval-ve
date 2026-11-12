@@ -127,3 +127,8 @@ Select-String -Path CITATION.cff -Pattern "pendiente"
 - Archivos rastreados que coinciden con `.env`, `privadas` o `.cache`: solo `.env.example`. Nunca estuvieron en el historial.
 - `git ls-files data`: solo `README.md` y `preguntas.jsonl`. Palabras de negocios o uso privado del autor: 0.
 - `results/`, `web/` y `data/` no contienen rutas locales ni nombres de usuario del equipo.
+
+## Dataset publicado (2026-11-12)
+
+- https://huggingface.co/datasets/lifelece/eval-ve, subido por el autor. Comprobado desde fuera, sin sesion: publico, licencia cc-by-4.0, archivos `preguntas.jsonl`, `README.md` y `.gitattributes`; 150 lineas, 150 con `validado_por`, ninguna del conjunto privado.
+- La card publicada conserva `DOI: [doi_pendiente]`: generar el DOI en Hugging Face o quitar la linea.
