@@ -18,6 +18,6 @@ keywords:
   - customs
   - commercial law
 # Pendiente de Luis al publicar (no inventar):
-# version: "[version_pendiente]"
-# date-released: "[AAAA-MM-DD_pendiente]"
+version: "0.1.0"
+date-released: "2026-11-12"
 # doi: "[doi_huggingface_pendiente]"
