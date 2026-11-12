@@ -16,7 +16,7 @@ size_categories:
   - n<1K
 ---
 
-# eval-ve (borrador de dataset card)
+# eval-ve
 
 > **Aviso: esto NO es asesoria legal, fiscal ni aduanera.** Es un conjunto de preguntas para medir conocimiento normativo de modelos de IA. Un buen resultado no sustituye a un abogado, a un contador ni a un agente aduanal. Ver `DISCLAIMER.md` en el repositorio.
 
