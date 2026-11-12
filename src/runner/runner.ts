@@ -170,7 +170,9 @@ export async function ejecutar(o: OpcionesEjecutar): Promise<ResultadoCorrida> {
 }
 
 async function procesar(o: OpcionesEjecutar, m: EntradaModelo, p: Pregunta): Promise<ItemResultado> {
-  const datasetSha = sha256(JSON.stringify(p));
+  // El sello de validacion humana no cambia lo que se le pregunta al modelo: se excluye de la
+  // version de la pregunta para que validar no invalide (ni haga pagar otra vez) las respuestas.
+  const datasetSha = sha256(JSON.stringify({ ...p, validado_por: null, fecha_validacion: null }));
   const item = itemVacio(p, 'ok');
   const pet = promptPregunta(p);
 
