@@ -14,6 +14,13 @@ const REQUERIDOS = ['id', 'dominio', 'tipo', 'pregunta', 'respuesta', 'articulo_
   'dificultad', 'vigente', 'validado_por', 'fecha_validacion'];
 const PREFIJO = { tributario: 'trib', aduanas: 'aduanas', mercantil: 'mercantil' };
 
+// Repartos esperados por modo. piloto = F2 (30), escala = F4 (150), privadas = control de contaminacion (30).
+export const ESPERADOS = {
+  piloto: { tributario: 10, aduanas: 10, mercantil: 10 },
+  escala: { tributario: 50, aduanas: 50, mercantil: 50 },
+  privadas: { tributario: 10, aduanas: 10, mercantil: 10 },
+};
+
 const esTexto = (v) => typeof v === 'string' && v.trim().length > 0;
 
 export function validarPregunta(p) {
@@ -86,14 +93,31 @@ export function validarLineas(texto, { fichas = null, esperado = null } = {}) {
   return { resultados, conteo, globales };
 }
 
+// Una pregunta privada no puede repetir el id ni el enunciado de una publica (control de contaminacion).
+export function colisiones(textoPrivado, textoPublico) {
+  const leer = (t) => t.split('\n').filter((l) => l.trim()).map((l) => { try { return JSON.parse(l); } catch { return {}; } });
+  const pub = leer(textoPublico);
+  const ids = new Set(pub.map((p) => p.id));
+  const enunciados = new Set(pub.map((p) => String(p.pregunta || '').trim().toLowerCase()));
+  const e = [];
+  for (const p of leer(textoPrivado)) {
+    if (ids.has(p.id)) e.push(`${p.id}: el id ya existe en el dataset publico`);
+    if (enunciados.has(String(p.pregunta || '').trim().toLowerCase())) e.push(`${p.id}: el enunciado repite el de una pregunta publica`);
+  }
+  return e;
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  const archivo = process.argv.slice(2).find((a) => !a.startsWith('--')) || join(RAIZ, 'data', 'preguntas.jsonl');
-  const piloto = process.argv.includes('--piloto');
+  const args = process.argv.slice(2);
+  const modo = args.includes('--privadas') ? 'privadas' : args.includes('--escala') ? 'escala' : args.includes('--piloto') ? 'piloto' : null;
+  const porDefecto = modo === 'privadas' ? join(RAIZ, 'data', 'privadas', 'preguntas-privadas.jsonl') : join(RAIZ, 'data', 'preguntas.jsonl');
+  const archivo = args.find((a) => !a.startsWith('--')) || porDefecto;
   const { resultados, conteo, globales } = validarLineas(readFileSync(archivo, 'utf8'), {
-    fichas: cargarFichas(), esperado: piloto ? { tributario: 10, aduanas: 10, mercantil: 10 } : null });
+    fichas: cargarFichas(), esperado: modo ? ESPERADOS[modo] : null });
+  if (modo === 'privadas') globales.push(...colisiones(readFileSync(archivo, 'utf8'), readFileSync(join(RAIZ, 'data', 'preguntas.jsonl'), 'utf8')));
   let malas = 0;
   for (const r of resultados) if (r.errores.length) { malas++; console.error(`${r.id} (linea ${r.linea}): ${r.errores.join('; ')}`); }
   for (const g of globales) console.error(`GLOBAL: ${g}`);
-  console.log(`${resultados.length - malas}/${resultados.length} validas; reparto ${JSON.stringify(conteo)}`);
+  console.log(`${resultados.length - malas}/${resultados.length} validas; reparto ${JSON.stringify(conteo)}${modo ? ` [modo ${modo}]` : ''}`);
   process.exit(malas || globales.length ? 1 : 0);
 }
