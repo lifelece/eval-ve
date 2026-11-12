@@ -15,7 +15,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas (Ley 2.027), se someten a la potestad aduanera los bienes y medios que ingresan o salen del territorio nacional, incluindo mercancías, vehículos y pasajeros. Este tema se encuentra en el artículo 1 de la Ley Orgánica de Aduanas.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -33,7 +33,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No puedo indicarte con certeza el artículo exacto ni el texto literal que responde a esa pregunta, y prefiero no inventarlo. Lo que sé en términos generales: la normativa aduanera venezolana (la Ley Orgánica de Aduanas y su Reglamento, así como el Decreto con Rango, Valor y Fuerza de Ley de Reforma de la Ley Orgánica de Aduanas) regula el abandono de mercancías. Distingue entre: - **Abandono voluntario (expreso):** el consignatario o propietario manifiesta por escrito ante la aduana su voluntad de abandonar la mercancía a favor del Fisco Nacional. Normalmente se admite antes de que la autoridad aduanera haya iniciado el proceso de verificación o de que se determine una infracción. - **Efectos generales:** la mercancía pasa a propiedad de la Nación, y se evita el pago de los tributos aduaneros, aunque pueden subsistir gastos de almacenaje o responsabilidades por infracciones ya causadas. No puedo confirmarte el momento límite exacto ni su numeración. Te recomiendo consultar el texto vigente publicado en Gaceta Oficial o en la página del SENIAT, o consultar con un agente aduanal o abogado especializado.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -51,7 +51,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No tengo certeza sobre el número exacto del artículo ni sobre la redacción literal de la Ley Orgánica de Aduanas vigente, por lo que no voy a citar un artículo concreto. En términos generales, la ley atribuye al **Estado venezolano, a través del Ejecutivo Nacional**, la competencia sobre la organización, el funcionamiento, el control y el régimen del servicio aduanero. En la práctica, esa función la ejerce el **Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT)**, como órgano administrativo encargado de la gestión aduanera, bajo la orientación del Ministerio con competencia en materia de finanzas. Para confirmar el texto exacto y el artículo aplicable, recomiendo revisar la Ley Orgánica de Aduanas en su versión vigente publicada en la Gaceta Oficial de la República Bolivariana de Venezuela, o consultar a un abogado especialista en derecho aduanero.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -69,7 +69,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas (LOA) de Venezuela, la autoridad aduanera puede realizar inspecciones y control en los almacenes, patios, oficinas, vehículos y demás lugares sujetos a su potestad aduanera, con el fin de garantizar el cumplimiento de las normas y regulaciones aduaneras. Para ello, la autoridad aduanera puede requerir la presentación de documentos y la realización de inspecciones, según lo establecido en el artículo 64 de la LOA, que establece que "la autoridad aduanera podrá requerir la presentación de documentos y realizar inspecciones en los almacenes, patios, oficinas, vehículos y demás lugares sujetos a su potestad aduanera, con el fin de garantizar el cumplimiento de las normas y regulaciones aduaneras". Es importante destacar que la autoridad aduanera debe actuar de acuerdo con las normas y procedimientos establecidos en la LOA y en otras normas y regulaciones aplicables.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -87,7 +87,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas (artículo 144), las mercancías ingresadas a la zona primaria pueden ser retiradas bajo la condición general de cumplir con los requisitos de inspección y pago de aranceles correspondientes.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -105,7 +105,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas, la demora en el pago de las cantidades líquidas y exigibles causadas por el paso de mercancías por las aduanas faculta a éstas para **retener las demás mercancías llegadas a nombre del mismo destinatario o consignatario**, hasta que se pague lo adeudado. **Sobre la base legal:** la regla proviene de la Ley Orgánica de Aduanas (Decreto con Rango, Valor y Fuerza de Ley Orgánica de Aduanas). No estoy seguro del número exacto del artículo, porque cambia entre las distintas versiones y reformas. Creo que podría ser el artículo 44, pero no puedo confirmarlo. Conviene verificarlo en el texto vigente publicado en Gaceta Oficial antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -123,7 +123,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No puedo confirmar con seguridad el artículo ni el plazo exacto que exige la Ley Orgánica de Aduanas sobre la entrega de mercancías descargadas por porteadores o transportistas. Para no darte un dato inventado, no citaré un número de artículo ni un plazo. Lo que sí puedo indicar, en términos generales, es que la normativa aduanera venezolana regula al porteador como responsable de la carga durante el transporte y de su traslado a la autoridad aduanera o a un depósito autorizado, sin que la mercancía quede bajo su custodia sin control aduanero. Para una respuesta precisa, te recomiendo: - Revisar el texto vigente de la Ley Orgánica de Aduanas en la Gaceta Oficial donde fue publicada, junto con su reglamento. - Verificar las providencias o instructivos del Servicio Nacional Integrado de Administración Aduanera y Tributaria (SENIAT), que suelen precisar plazos y procedimientos. - Consultar con un abogado o agente de aduanas venezolano. Si me compartes el texto del artículo, con gusto te ayudo a interpretarlo.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -141,7 +141,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Lo siento, pero no tengo información específica sobre la Ley Orgánica de Aduanas en Venezuela que permita a las mercancías de exportación retornar al territorio aduanero nacional por no haber encontrado mercado en el exterior. Sin embargo, según la Ley Orgánica de Aduanas de Venezuela (Gaceta Oficial No. 6.365, del 12 de diciembre de 2013), el importador o exportador debe cumplir con las obligaciones aduaneras, incluyendo la devolución de los bienes si no se han vendido o no se han utilizado. En este caso, el interesado debe reintegrar el valor de los bienes no vendidos o no utilizados al Tesoro Nacional, según lo establecido en el artículo 123 de la Ley Orgánica de Aduanas. Sin embargo, no tengo información específica sobre la norma que establece el valor de reintegración.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -159,7 +159,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas (Ley 24.554), el consignatario tiene la responsabilidad de declarar las mercancías correctamente. Sin embargo, no puede determinar quién las declara. Esta responsabilidad recae directamente sobre el declarante. Base legal: Ley Orgánica de Aduanas, artículo 14.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -177,7 +177,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según recuerdo, esto lo regula la Ley Orgánica de Aduanas (Decreto con Rango, Valor y Fuerza de Ley Orgánica de Aduanas), en su artículo 100 si no me falla la memoria, aunque no puedo garantizar el número exacto del artículo ni la numeración vigente tras las reformas. **Regla general:** la aceptación de la consignación, la declaración de efectos de exportación y los trámites relacionados con los regímenes aduaneros deben efectuarse por medio de **agentes de aduanas** (personas naturales o jurídicas autorizadas). **Excepciones que recuerdo (con reserva):** 1. Los **entes del sector público** (la República, estados, municipios, institutos autónomos, empresas del Estado) podían actuar directamente, sin agente de aduanas. 2. Las **mercancías transportadas por viajeros** o de **escaso valor/sin carácter comercial** (equipaje, envíos postales o pequeños envíos), según lo que determine el Reglamento. No tengo certeza de la lista exacta de excepciones ni de su redacción literal. Te recomiendo verificar el texto en la Gaceta Oficial vigente de la Ley Orgánica de Aduanas y su Reglamento, o consultar con un agente de aduanas o con el SENIAT.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -195,7 +195,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** **Abandono voluntario de las mercancías:** en términos generales, es la renuncia que hace el propietario, consignatario o importador a sus mercancías a favor del Estado, normalmente cuando no las retira del recinto aduanero o no cumple los trámites de despacho dentro de los plazos legales. Con ello se evitan gastos de almacenaje, multas y otras responsabilidades, y las mercancías pasan a disposición de la Administración aduanera, que puede destinarlas a subasta, donación o destrucción según la normativa aplicable. **Artículo y norma:** no puedo confirmar con seguridad el número del artículo ni los datos de publicación de la Gaceta Oficial en que se regula esta figura en la Ley Orgánica de Aduanas vigente. Le recomiendo verificar el texto en la Gaceta Oficial oficial o en la SENIAT, y revisar también el reglamento de la ley, que suele desarrollar el procedimiento.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -213,7 +213,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica de Aduanas de Venezuela, si el producto del remate no alcanza para cubrir los créditos fiscales, el importador debe pagar el monto restante como multa. Artículo 123 de la Ley Orgánica de Aduanas (Gaceta Oficial No. 40.061, del 28 de diciembre de 2017) establece que "Si el producto del remate no alcanza para cubrir los créditos fiscales, el importador pagará el monto restante como multa, que será del 20% sobre el monto no cubierto". Por otro lado, si el producto del remate excede los créditos fiscales, el importador podrá reteniendo el exceso como ingreso. Es importante mencionar que estas disposiciones pueden haber cambiado con la actualización de la normativa, por lo que se recomienda consultar fuentes actualizadas y oficiales para obtener información precisa.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -231,7 +231,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el artículo 14 del Código de Comercio venezolano, las sociedades anónimas y las de responsabilidad limitada tienen carácter de sociedades comerciales. Esto implica que su objeto social se centra en actividades comerciales, industriales o de servicios.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -249,7 +249,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley de Registros y del Notariado (Decreto con Rango, Valor y Fuerza de Ley de Registros y del Notariado, 2014), los registradores mercantiles califican la legalidad del documento cuya inscripción se solicita, es decir, examinan que cumpla los requisitos formales y de fondo exigidos por la ley, y que sea inscribible conforme al Código de Comercio y demás normas aplicables. Sin embargo, no puedo confirmar con certeza el número exacto del artículo. Recuerdo que la regulación de la calificación y de las funciones de los registradores mercantiles se encuentra en el capítulo sobre los Registros Mercantiles (hacia los artículos 85 a 93), y que el artículo sobre la calificación podría ser el 87 o cercano, pero no estoy seguro. Tampoco recuerdo con precisión si el texto menciona expresamente la "capacidad de los otorgantes" o la "validez del contenido". Te recomiendo verificar el texto en la Gaceta Oficial donde fue publicada la ley (la reforma de 2014) antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -267,7 +267,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el **artículo 1 del Código de Comercio venezolano**, a mi entender, las costumbres mercantiles suplen el silencio de la ley mercantil cuando el Código y las demás leyes de comercio no regulan el caso. En ese supuesto se aplican primero las costumbres mercantiles, y solo a falta de ellas, el derecho común (Código Civil). No puedo garantizar la redacción literal del artículo ni el número exacto de la Gaceta Oficial en la que se publicó la versión vigente, así que te recomiendo verificar el texto en la Gaceta Oficial o en una fuente oficial actualizada antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -285,7 +285,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el Código de Comercio de Venezuela, los comerciantes son personas físicas o jurídicas que ejercen actividades comerciales, es decir, actividades que tienen como objeto la producción, transformación, distribución y comercialización de bienes y servicios. Artículo 1 del Código de Comercio establece que "el comercio se entiende por la actividad económica que tiene como objeto la producción, transformación, distribución y comercialización de bienes y servicios". Además, el artículo 2 del Código de Comercio define a los comerciantes como "las personas físicas o jurídicas que ejercen actividades comerciales". Es importante destacar que el Código de Comercio es una norma jurídica que regula las actividades comerciales en Venezuela, y su aplicación puede variar dependiendo del contexto y la interpretación de los tribunales.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -303,7 +303,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el artículo 308 del Código de Comercio venezolano, el libro Diario debe registrarse todos los días y debe ser revisado y firmado por el responsable de la empresa. No hay especificación sobre la periodicidad en el texto original, pero se asume que es diario.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -321,7 +321,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el **Código de Comercio de Venezuela, artículo 34**, todo comerciante debe llevar el libro de Inventarios, en el cual: - **Al comenzar su giro:** debe hacer constar una relación exacta de sus bienes, tanto muebles como inmuebles, y de sus deudas y obligaciones (activo y pasivo), con su estimación o valoración. - **Al fin de cada año:** debe formar y transcribir en ese libro el inventario detallado de la misma naturaleza, es decir, la relación y valoración de todos sus bienes y obligaciones a esa fecha. - **Cierre del inventario:** debe concluir con el **balance** o cuenta general de sus negocios (el balance general), con la demostración de ganancias y pérdidas, el cual debe ser firmado por el comerciante. Lo anterior lo expongo de memoria y en términos generales. Te recomiendo verificar la redacción literal y la numeración exacta en el texto vigente del Código de Comercio (Gaceta Oficial correspondiente), pues no puedo garantizar la cita textual ni detalles como la exigencia precisa de firma.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[x]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -339,7 +339,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** **Respuesta (con reserva de verificación):** No tengo certeza de la numeración exacta del artículo, así que no lo cito como seguro. Lo que sí puedo indicar, con cautela, es el criterio general del Código de Comercio venezolano (reformado en 1955 y vigente), que regula la admisión de nuevos socios en sociedades de personas, especialmente la colectiva: - **Responsabilidad:** el socio admitido a una sociedad ya constituida responde, en principio, de las obligaciones sociales, incluidas las contraídas antes de su ingreso, en la misma forma que los socios anteriores. Esto es lo que recoge, según mi conocimiento, el artículo 218 del Código de Comercio, pero **debe verificarse en el texto oficial**. - **Pactos distintos:** los socios pueden acordar entre sí condiciones internas (por ejemplo, una indemnización o un reparto de cargas), pero esos pactos **no son oponibles a los terceros acreedores**. **Recomendación:** consulte el texto vigente del Código de Comercio en la Gaceta Oficial y, ante un caso concreto, un abogado mercantilista. No le doy un número de Gaceta porque no lo tengo verificado.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -357,7 +357,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Lo siento, pero no tengo información específica sobre el artículo 233 del Código de Comercio venezolano. Sin embargo, puedo proporcionarte una respuesta general basada en principios comerciales comunes. En general, los socios de una sociedad mercantil no pueden realizar actividades comerciales que sean idénticas o similares a las que realiza la sociedad, ya que esto podría generar confusión entre los clientes y socavar la autoridad de la sociedad. Esto se basa en el principio de distinción entre las actividades de los socios y las de la sociedad. Si necesitas información específica sobre el Código de Comercio venezolano, te recomiendo consultar la Gaceta Oficial o un recurso legal actualizado.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -375,7 +375,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el Código de Comercio Venezolano, los comanditarios pueden ejecutar actos de administración o ser apoderados de la sociedad, siempre que no contravengan los fines de la sociedad. Si lo hacen, podrían ser sancionados con multas. Base legal: Art. 1044.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -393,7 +393,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No tengo certeza sobre el número exacto del artículo que regula esto, así que prefiero no citarlo de memoria para no inventarlo. Lo que sí recuerdo, con reserva, es que el Código de Comercio venezolano (norma de 1955) contiene disposiciones sobre la constitución de sociedades anónimas y sobre la responsabilidad de quienes actúan en esa fase previa. En términos generales, quienes contratan en nombre de la sociedad antes de que esté constituida e inscrita responden personal y solidariamente por las obligaciones contraídas, salvo que la sociedad, una vez constituida, las asuma o ratifique, y siempre según lo que se haya pactado con los terceros. Dado que no puedo confirmar el artículo ni su redacción literal, te recomiendo consultar directamente el texto del Código de Comercio, en el capítulo relativo a las compañías anónimas y su constitución (sección sobre fundadores o promotores), o la edición oficial publicada en Gaceta Oficial. Si me indicas el artículo que tienes a la vista, puedo ayudarte a interpretarlo.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -411,7 +411,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** **No puedo citar con seguridad el artículo específico de la Ley de Registros y Notarías** que atribuye estas funciones a la Registradora o Registrador Mercantil, y no quiero inventar una referencia. En términos generales, la función del Registro Mercantil respecto de las compañías anónimas y las sociedades de responsabilidad limitada es **registrar** sus actos constitutivos y societarios, como: - La constitución y los estatutos. - Las modificaciones estatutarias. - El aumento o disminución de capital. - El nombramiento y la remoción de administradores y comisarios. - La disolución y liquidación. La base normativa principal de estos actos suele encontrarse en el **Código de Comercio** (Título sobre el Registro de Comercio y las sociedades mercantiles), no en la Ley de Registros y Notarías, que regula de forma general la organización de los registros. Le recomiendo verificar el texto vigente en la **Gaceta Oficial de la República Bolivariana de Venezuela** o consultar a un abogado mercantilista para identificar los artículos exactos.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -429,7 +429,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley de Registros y Notarías de Venezuela, cuando quien otorga un documento notarial está impedido para suscribirlo con su firma, el documento no es válido. Artículo 64 de la Ley de Registros y Notarías (Gaceta Oficial No. 38.061, del 28 de diciembre de 2001) establece que "El documento no es válido si el notario o el notario público que lo otorga está impedido para suscribirlo con su firma". En este caso, el documento no se registra en el Registro Civil y no tiene valor jurídico. El notario o notario público debe solicitar la declaración de incapacidad para suscribir documentos, que debe ser aprobada por un juez competente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -447,7 +447,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el artículo 244 del Código Orgánico Tributario, la falta de pago de la obligación tributaria dentro del plazo establecido genera intereses moratorios desde el día siguiente al de la fecha en que se hubiera debido realizar el pago hasta el día de la liquidación. Los intereses se calculan en base al tipo de interés de referencia de la República Bolivariana de Venezuela, que es el tipo de interés del Banco Central de Venezuela. No se menciona un número específico de la Gaceta en la normativa.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -465,7 +465,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No están sujetos al IVA. La Ley del IVA venezolana excluye expresamente de la noción de prestación de servicios a los prestados bajo relación de dependencia. **Fundamento:** el artículo 3, numeral 3 del Decreto con Rango, Valor y Fuerza de Ley que establece el Impuesto al Valor Agregado define la "prestación de servicios" como toda actividad en la que predomine el esfuerzo humano sobre el capital, realizada de forma independiente, por la cual se pague una contraprestación. El mismo artículo establece que no se consideran prestaciones de servicios sujetas al impuesto las realizadas bajo relación de dependencia regidas por la legislación laboral. **Razón:** el hecho imponible exige una actividad independiente. Cuando existe subordinación, la remuneración es salario y se rige por la legislación laboral, no es una contraprestación gravada. **Advertencia:** la numeración de los artículos y el texto vigente han variado entre reformas, por lo que conviene verificar la versión vigente en Gaceta Oficial. No puedo confirmar con seguridad el número de Gaceta de la última reforma.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -483,7 +483,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** El Código Orgánico Tributario (COT) distingue entre **contribuyentes** y **responsables**: - **Contribuyentes:** quienes realizan el hecho generador del tributo, es decir, la persona con vínculo directo con la obligación. - **Responsables:** quienes, sin ser contribuyentes, deben cumplir obligaciones tributarias por disposición expresa de la ley. Por ejemplo, los agentes de retención o percepción, que retienen o cobran el tributo y lo enteran al fisco. No puedo confirmar con certeza el número exacto del artículo que define y regula a los responsables en la versión vigente del COT, ni las reformas que pudieran afectarlo. Te recomiendo verificar el texto en la Gaceta Oficial de la República Bolivariana de Venezuela, o en una fuente jurídica actualizada, antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[x]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -501,7 +501,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el Código Orgánico Tributario (COT), el hecho imponible es el acto o situación que determina la obligación de pagar una contribución o impuesto. En el artículo 2 del COT, se establece que "el hecho imponible es el acto o situación que determina la obligación de pagar una contribución o impuesto". Esto significa que el hecho imponible es el evento o situación que genera la obligación de pagar una deuda tributaria. Es importante destacar que el hecho imponible puede variar según el tipo de impuesto o contribución, pero en general, se refiere a la situación o evento que genera la obligación de pagar una deuda tributaria.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -519,7 +519,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el Código Orgánico Tributario, 119. La renuncia a la prescripción consumada se entiende cuando se realiza un pago parcial que cubre al menos el 50% del monto adeudado. Este pago activa el plazo de prescripción, pero no extiende el plazo de prescripción ya iniciado. Base legal: Artículo 119 del Código Orgánico Tributario.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -537,7 +537,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según el Código Orgánico Tributario venezolano, las exoneraciones de tributos nacionales se conceden mediante **ley especial** o mediante **decreto del Poder Ejecutivo Nacional**, cuando una ley nacional lo autorice. **Base normativa:** artículo 73 del Código Orgánico Tributario (reforma de 2014). Según recuerdo, establece que la exoneración es la dispensa total o parcial del pago de la obligación tributaria, otorgada por la ley en los casos permitidos por ella. Dicho artículo indica que la ley que autorice al Poder Ejecutivo para conceder exoneraciones debe especificar los tributos que comprende, los presupuestos de procedencia y las condiciones a las que se sujeta el beneficio, así como el plazo de duración, que no puede exceder de cinco años (salvo que la ley disponga otra cosa). **Advertencia:** estoy seguro del sentido general de la regla, pero no de la redacción literal ni de la numeración exacta de los artículos conexos (por ejemplo, el artículo 74 sobre la exoneración por decreto). Conviene verificar el texto vigente en la Gaceta Oficial correspondiente antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -555,7 +555,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** No puedo confirmar con certeza el número del artículo de la Ley de Impuesto al Valor Agregado que define a los contribuyentes ordinarios, así que no voy a citarlo para evitar un error. En términos generales, la ley distingue entre contribuyentes ordinarios y otras categorías según su actividad y su condición frente al impuesto. Los contribuyentes ordinarios son, en principio, quienes realizan de forma habitual las actividades gravadas (venta de bienes muebles, prestación de servicios, importaciones, entre otras) y que no están sujetos a un régimen especial. Para responder con precisión y citar el artículo exacto, te recomiendo: - Revisar el texto vigente de la **Ley de Impuesto al Valor Agregado**, publicada en la Gaceta Oficial N° 6.152 Extraordinario (18/11/2014), y sus reformas posteriores, si las hubiera. - Verificar en la **Gaceta Oficial** la versión actualizada, porque la ley ha sido modificada. - Consultar al **SENIAT** o a un abogado tributarista para confirmar la definición aplicable.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -573,7 +573,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley Orgánica del Impuesto al Valor Agregado (Ley 1286 de 2006), los contribuyentes ocasionales son aquellos que, en un solo año impositivo, realizan actividades económicas que generen ingresos sujetos a impuesto, pero no tienen establecida una actividad económica regular. Estos contribuyentes deben pagar el impuesto al valor agregado (IVA) sobre los ingresos obtenidos en ese año, siempre y cuando superen el umbral mínimo establecido por la ley. El IVA se paga a través de la presentación de una declaración de impuesto al valor agregado, junto con el pago del monto correspondiente. Artículo 62 de la Ley 1286 de 2006.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -591,7 +591,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley del Impuesto al Valor Agregado (IVA), la obligación tributaria derivada de cada operación gravada se determina en función de la naturaleza de la operación y del importe del IVA aplicable. Para cada período, esa obligación se denomina "deber tributario" y se registra en el Libro de Comprobantes Fiscales Diarios (LCFD). Este tema se encuentra en el Artículo 148 de la Ley del IVA y en el Reglamento del IVA.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[x]` incorrecta — ¿inventa una cita? `[x]` sí · `[ ]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -609,7 +609,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** Según la Ley que establece el Impuesto al Valor Agregado (Decreto con Rango, Valor y Fuerza de Ley), el impuesto se determina **por períodos mensuales** (períodos de imposición mensuales). Para cada período, el contribuyente resta de los débitos fiscales (impuesto causado por sus ventas o prestaciones de servicios) los créditos fiscales (impuesto soportado en sus compras e importaciones), y la diferencia constituye el impuesto a pagar a la República, o un excedente de crédito fiscal si el resultado es negativo. **Base legal:** creo que esta regla está en el **artículo 31** de la Ley del IVA, que se refiere a la determinación del impuesto por períodos mensuales. Sin embargo, no tengo plena certeza sobre la numeración exacta, pues la ley ha sido reformada varias veces y los artículos han cambiado de numeración según la versión (por ejemplo, la reforma publicada en Gaceta Oficial en 2014 y las posteriores). Le recomiendo verificar el artículo en el texto vigente de la ley antes de citarlo formalmente.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[x]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -627,7 +627,7 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 **Respuesta del modelo:** **No puedo confirmar con certeza el artículo aplicable.** No tengo acceso verificado al texto de la Ley de Impuesto a las Grandes Transacciones Financieras publicada en la G.O. 6.687, y no quiero citar un artículo que no pueda respaldar. En términos generales, en el sistema tributario venezolano la administración tributaria (SENIAT) suele tener facultades para: - Fiscalizar y verificar el cumplimiento de las obligaciones. - Determinar de oficio el tributo cuando el contribuyente no declare o declare de forma incorrecta. - Aplicar sanciones según el procedimiento legal. Estas facultades generales derivan normalmente del Código Orgánico Tributario, no necesariamente de la ley especial del IGTF. Para una respuesta precisa, revisa el texto íntegro de la ley en la Gaceta Oficial correspondiente o consulta el sitio oficial del SENIAT o de la Asamblea Nacional.
 
-**Veredicto de Luis:** `[ ]` correcta · `[ ]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[ ]` no
+**Veredicto de Luis:** `[ ]` correcta · `[x]` parcial · `[ ]` incorrecta — ¿inventa una cita? `[ ]` sí · `[x]` no
 
 <details><summary>Veredicto del juez</summary>
 
@@ -639,6 +639,10 @@ Concordancia = casos donde tu veredicto coincide con el del juez / total. Si que
 
 ## Resultado
 
-- Coincidencias en el veredicto: `[n]` de 35
-- Coincidencias en cita inventada: `[n]` de 35
-- Decisión: `[ ]` el juez es fiable, se pasa a F5 · `[ ]` ajustar la rúbrica y repetir
+Revisión hecha por Luis el 2026-11-12.
+
+- Coincidencias en el veredicto: **35 de 35 (100 %)**. Kappa de Cohen: 1,00. Reparto: 3 correctas, 18 parciales, 14 incorrectas.
+- Coincidencias en cita inventada: **33 de 35 (94,3 %)**. En los casos 4 (aduanas-012, Llama) y 13 (mercantil-001, Qwen) Luis marcó cita inventada (arts. 64 LOA y 14 CCom) y el juez no: el juez deja pasar algunas citas inventadas, así que la tasa publicada de "cita inventada" es un mínimo.
+- Decisión: `[x]` el juez es fiable, se pasa a F5 · `[ ]` ajustar la rúbrica y repetir
+
+Límites de esta medición: son 35 casos de una sola corrida y un solo revisor. El archivo se guardó con el veredicto del juez a la vista, así que no consta que la calificación haya sido a ciegas; una concordancia del 100 % debe leerse con esa reserva.
