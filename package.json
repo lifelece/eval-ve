@@ -9,8 +9,9 @@
     "node": ">=20"
   },
   "scripts": {
-    "validar": "node src/validar/validar-preguntas.mjs data/preguntas.jsonl --piloto",
-    "test": "node --test \"src/**/*.test.mjs\" \"src/**/*.test.ts\"",
+    "validar": "node src/validar/validar-preguntas.mjs data/preguntas.jsonl --escala",
+    "test": "node --test \"src/**/*.test.mjs\" \"src/**/*.test.ts\" \"scripts/**/*.test.mjs\"",
+    "verificar-citas": "node scripts/verificar-citas.mjs",
     "piloto": "node src/runner/cli.ts",
     "web:datos": "node scripts/construir-web.mjs"
   },
