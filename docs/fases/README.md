@@ -24,7 +24,7 @@ punto con Luis en una frase si no hay constancia de que ya se dio luz verde.
 | 2 — Piloto | [FASE-2-PILOTO.md](FASE-2-PILOTO.md) | **Cerrada** (PR #3: las 30 preguntas aprobadas por Luis, 26/10) |
 | 3 — Harness | [FASE-3-HARNESS.md](FASE-3-HARNESS.md) | **Corrida piloto hecha (2026-11-12)**: 30 preguntas, Haiku 5.5 y Qwen 2.5 3B, 0,0131 USD. Hallazgo: en el piloto la respuesta correcta es la B en 12 de 21 opciones multiples; no discrimina bien. Falta la revision de Luis |
 | 4 — Escala | [FASE-4-ESCALA.md](FASE-4-ESCALA.md) | **Cerrada por Luis el 2026-11-12**: 150 preguntas x 4 modelos (0,41 USD de un tope de 5); revision humana del juez hecha (35 de 35 veredictos, [REVISION-JUEZ-F4.md](REVISION-JUEZ-F4.md)); las 150 preguntas selladas por el autor con `scripts/sellar-validacion.mjs` |
-| 5 — Publicacion | [FASE-5-PUBLICACION.md](FASE-5-PUBLICACION.md) | **En seco (2026-11-12)**: tabla de posiciones, `CITATION.cff`, dataset card y checklist (PR #6). Faltan resultados reales, telefono real, despliegue y Hugging Face |
+| 5 — Publicacion | [FASE-5-PUBLICACION.md](FASE-5-PUBLICACION.md) | **En curso (2026-11-12)**: dataset publicado en Hugging Face (https://huggingface.co/datasets/lifelece/eval-ve; 150 preguntas, CC BY 4.0, comprobado sin el conjunto privado). Faltan: hacer publico el repositorio, desplegar la tabla y verla en telefono real ([CHECKLIST-F5.md](CHECKLIST-F5.md)) |
 | 6 — LinkedIn | [FASE-6-LINKEDIN.md](FASE-6-LINKEDIN.md) | Pendiente — sin STOP gate |
 
 ## La regla del STOP gate

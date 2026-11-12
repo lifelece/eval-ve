@@ -39,6 +39,8 @@ con validación del autor. Corrida vigente: `2026-11-12_151044`, 4 modelos, juez
 | Qwen 2.5 3B (local) | 69,8 % (74/106) | 9,1 % | 2,3 % (1/44) | 79,5 % (35/44) |
 | Llama 3.2 3B (local) | 64,2 % (68/106) | 10,2 % | 2,3 % (1/44) | 84,1 % (37/44) |
 
+Conjunto de preguntas: [lifelece/eval-ve en Hugging Face](https://huggingface.co/datasets/lifelece/eval-ve) (CC BY 4.0).
+
 Cómo leerlo: es una sola corrida por modelo; el juez es otro modelo y deja pasar algunas citas inventadas
 (revisión humana de 35 correcciones en `docs/fases/REVISION-JUEZ-F4.md`); una abstención cuenta como fallo.
 Detalle por dominio y dificultad en `results/`. Mapa de fases en [docs/fases/README.md](docs/fases/README.md)
@@ -95,6 +97,8 @@ validated by the author. Current run: `2026-11-12_151044`, 4 models, judge Claud
 | Claude Haiku 5.5 | 82,1 % (87/106) | 38,6 % | 6,8 % (3/44) | 6,8 % (3/44) |
 | Qwen 2.5 3B (local) | 69,8 % (74/106) | 9,1 % | 2,3 % (1/44) | 79,5 % (35/44) |
 | Llama 3.2 3B (local) | 64,2 % (68/106) | 10,2 % | 2,3 % (1/44) | 84,1 % (37/44) |
+
+Question set: [lifelece/eval-ve on Hugging Face](https://huggingface.co/datasets/lifelece/eval-ve) (CC BY 4.0).
 
 How to read it: one run per model; the judge is another model and misses some invented citations
 (human review of 35 judge decisions in `docs/fases/REVISION-JUEZ-F4.md`); an abstention counts as a miss.
