@@ -1,20 +1,56 @@
 {
   "version": 1,
-  "nota": "Precios en USD por millon de tokens (entrada/salida). Haiku 5.5: precio de la skill claude-api (cache 2026-10-06), valido para prompts de hasta 100K tokens; Luis debe confirmarlo en la consola de Anthropic antes de la corrida. LM Studio corre en local: costo 0.",
+  "nota": "Precios en USD por millon de tokens (entrada/salida), de la skill claude-api (cache 2026-11-03): Haiku 5.5 0,10/0,50 (prompts de hasta 100K tokens) y Sonnet 5.5 2/10. Confirmarlos en la consola de Anthropic antes de una corrida. Los modelos locales (LM Studio u Ollama, protocolo OpenAI) cuestan 0; un `id` que el servidor local lista elige ese modelo, y si no, manda LMSTUDIO_MODEL. Sin fallback de servidor en los modelos de pago: en un benchmark un rechazo cuenta como rechazo, no se reintenta con otro modelo.",
   "tope_gasto_usd_por_defecto": 2,
   "juez_por_defecto": "haiku",
   "modelos": {
     "haiku": {
       "proveedor": "anthropic",
       "id": "claude-haiku-5-5",
-      "precio_usd_por_mtok": { "entrada": 0.1, "salida": 0.5 },
+      "precio_usd_por_mtok": {
+        "entrada": 0.1,
+        "salida": 0.5
+      },
       "max_tokens": 2000,
       "effort": "low"
     },
     "lmstudio": {
       "proveedor": "lmstudio",
       "id": "[modelo_cargado_en_lm_studio]",
-      "precio_usd_por_mtok": { "entrada": 0, "salida": 0 },
+      "precio_usd_por_mtok": {
+        "entrada": 0,
+        "salida": 0
+      },
+      "max_tokens": 1500,
+      "temperature": 0
+    },
+    "sonnet": {
+      "proveedor": "anthropic",
+      "id": "claude-sonnet-5-5",
+      "precio_usd_por_mtok": {
+        "entrada": 2,
+        "salida": 10
+      },
+      "max_tokens": 2000,
+      "effort": "low"
+    },
+    "qwen": {
+      "proveedor": "lmstudio",
+      "id": "qwen2.5:3b",
+      "precio_usd_por_mtok": {
+        "entrada": 0,
+        "salida": 0
+      },
+      "max_tokens": 1500,
+      "temperature": 0
+    },
+    "llama": {
+      "proveedor": "lmstudio",
+      "id": "llama3.2:3b",
+      "precio_usd_por_mtok": {
+        "entrada": 0,
+        "salida": 0
+      },
       "max_tokens": 1500,
       "temperature": 0
     }

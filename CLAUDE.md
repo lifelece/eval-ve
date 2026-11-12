@@ -197,10 +197,11 @@ diga explicitamente otra cosa** — ver `docs/fases/FASE-1-CORPUS.md`.
 
 ## Estado actual
 
-**Fase 0 — en cierre, pendiente de aprobacion de Luis.** Repo creado, sin
-commit todavia (regla 4). Sin dataset, sin corpus, sin harness: eso empieza en
-F1. Ver `docs/fases/FASE-0-SETUP.md` para el detalle de lo entregado y lo que
-falta decidir en el gate.
+**Al 2026-11-12:** F0, F1 (con F1b) y F2 cerradas. F3 construida en seco: falta la
+corrida piloto real (clave de Anthropic del autor, tope 2 USD). F4 con el dataset
+en 150 preguntas (PR #7) y los modelos definidos; faltan las corridas y la
+revision humana del 20 %. F5 construida en seco (PR #6). El estado vigente de
+cada fase esta en `docs/fases/README.md`.
 
 ## Al empezar una sesion
 

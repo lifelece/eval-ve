@@ -44,7 +44,9 @@ export function crearClienteLmStudio(config: ConfigModelo, op: OpcionesLmStudio 
       if (!r.ok) throw new ErrorFatal(`LM Studio respondio ${r.status} a GET ${base}/models.`);
       const cuerpo = (await r.json()) as { data?: { id: string }[] };
       const ids = (cuerpo.data ?? []).map((m) => m.id);
-      const elegido = env.LMSTUDIO_MODEL || (ids.length === 1 ? ids[0] : undefined);
+      // Un id de la config que el servidor lista manda (permite varios modelos locales en una corrida);
+      // si no, LMSTUDIO_MODEL o el unico modelo cargado.
+      const elegido = (ids.includes(config.id) ? config.id : undefined) || env.LMSTUDIO_MODEL || (ids.length === 1 ? ids[0] : undefined);
       if (!elegido) {
         throw new ErrorFatal(
           ids.length === 0
