@@ -22,8 +22,8 @@ punto con Luis en una frase si no hay constancia de que ya se dio luz verde.
 | 0 — Setup | [FASE-0-SETUP.md](FASE-0-SETUP.md) | **Cerrada** (PR #1, aprobada por Luis, 2026-10-20) |
 | 1 — Corpus | [FASE-1-CORPUS.md](FASE-1-CORPUS.md) | **Cerrada** (PR #2 mergeado 2026-10-26; F1b: PR #4, 16 normas mas, 2026-10-26) |
 | 2 — Piloto | [FASE-2-PILOTO.md](FASE-2-PILOTO.md) | **Cerrada** (PR #3: las 30 preguntas aprobadas por Luis, 26/10) |
-| 3 — Harness | [FASE-3-HARNESS.md](FASE-3-HARNESS.md) | **En curso, en seco**: runner construido y probado con clientes simulados; falta la corrida piloto real (necesita la clave de Anthropic del autor; tope 2 USD) |
-| 4 — Escala | [FASE-4-ESCALA.md](FASE-4-ESCALA.md) | **En curso (2026-11-12)**: dataset a 150 preguntas con verificacion de citas y control de sesgo de longitud (PR #7); modelos aprobados por Luis: Haiku 5.5, Sonnet 5.5 y dos locales, tope 5 USD (`config/modelos.json`). Faltan las corridas y la revision humana del 20 % |
+| 3 — Harness | [FASE-3-HARNESS.md](FASE-3-HARNESS.md) | **Corrida piloto hecha (2026-11-12)**: 30 preguntas, Haiku 5.5 y Qwen 2.5 3B, 0,0131 USD. Hallazgo: en el piloto la respuesta correcta es la B en 12 de 21 opciones multiples; no discrimina bien. Falta la revision de Luis |
+| 4 — Escala | [FASE-4-ESCALA.md](FASE-4-ESCALA.md) | **Corrida hecha (2026-11-12)**: 150 preguntas x 4 modelos (Haiku 5.5, Sonnet 5.5, Qwen 2.5 3B, Llama 3.2 3B), 0,41 USD de un tope de 5. Resultados PRELIMINARES: ninguna pregunta tiene `validado_por`. Falta la revision humana del 20 % del juez ([REVISION-JUEZ-F4.md](REVISION-JUEZ-F4.md)) y el muestreo de preguntas ([REVISION-F4.md](REVISION-F4.md)) |
 | 5 — Publicacion | [FASE-5-PUBLICACION.md](FASE-5-PUBLICACION.md) | **En seco (2026-11-12)**: tabla de posiciones, `CITATION.cff`, dataset card y checklist (PR #6). Faltan resultados reales, telefono real, despliegue y Hugging Face |
 | 6 — LinkedIn | [FASE-6-LINKEDIN.md](FASE-6-LINKEDIN.md) | Pendiente — sin STOP gate |
 
