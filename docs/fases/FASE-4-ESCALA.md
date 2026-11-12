@@ -52,3 +52,10 @@ confiable revisando a mano el 20% de sus correcciones.
 El gate es la revision humana del 20%: si el juez se desvia demasiado del
 criterio de Luis, no se pasa a publicar (F5) sin ajustar la rubrica o el
 proceso de calificacion primero.
+
+## Estado de la parte de datos (2026-11-12)
+
+- `data/preguntas.jsonl`: 150 preguntas (50 por dominio), las 30 del piloto intactas y 120 nuevas con `validado_por: null`. Hoja de citas y propuesta de muestreo: [REVISION-F4.md](REVISION-F4.md).
+- Conjunto privado de control de contaminacion: 30 preguntas (10 por dominio) en `data/privadas/` (fuera de git), con la misma verificacion de citas.
+- Verificacion: `npm run validar` (modo `--escala`; `--piloto` y `--privadas` siguen disponibles), `npm run verificar-citas` (local, necesita los textos de `C:\dev\eval-ve-textos\`) y `npm test`.
+- Pendiente de F4: correr el harness con 4-6 modelos, revision humana del 20 % y concordancia juez-humano (no forman parte de esta entrega).
