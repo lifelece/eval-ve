@@ -12,7 +12,16 @@ export function parsearLetra(texto: string, nOpciones: number): number | null {
   const limpio = texto.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
   const inicio = /^[\s*_`(\[]*(?:opci[oó]n\s+|respuesta[:\s]+)?([A-F])(?=[ \t*_`)\].:,;-]*(?:$|\r?\n)|[)\].:])/i.exec(limpio); // la letra sola en su linea vale aunque siga una nota
   const alterna = /respuesta(?:\s+correcta)?\s*(?:es|:)\s*[*_`(]*([A-F])\b/i.exec(limpio);
-  const m = inicio ?? alterna;
+  // Modelos que razonan antes de responder: vale la ULTIMA linea que es solo una letra
+  // (con o sin negrita) o que cierra con "respuesta ...: X".
+  let final: RegExpExecArray | null = null;
+  for (const linea of limpio.split(/\r?\n/)) {
+    const l = linea.trim();
+    const sola =
+      /^[*_`(\[]*([A-F])[*_`)\].]*$/.exec(l) ?? /respuesta[^:]{0,30}:\s*[*_`(]*([A-F])[*_`).]*$/i.exec(l);
+    if (sola) final = sola;
+  }
+  const m = inicio ?? alterna ?? final;
   if (!m) return null;
   const i = LETRAS.indexOf(m[1].toUpperCase());
   return i >= 0 && i < nOpciones ? i : null;

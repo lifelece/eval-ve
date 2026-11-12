@@ -51,3 +51,14 @@ test('parsearLetra: la letra sola en la primera linea vale aunque siga una nota 
   assert.equal(parsearLetra('Bueno, depende del caso.\nNo lo se.', 4), null);
   assert.equal(parsearLetra('A veces aplica la B', 4), null);
 });
+
+test('parsearLetra: razonamiento previo con la letra final en su propia linea', () => {
+  assert.equal(parsearLetra('Recuerdo que la tarifa es 34%.\n\n**C**', 4), 2);
+  assert.equal(parsearLetra('Las opciones A y B son de no sujecion.\n\nMi respuesta, con cautela, es:\n\n**C**', 4), 2);
+  assert.equal(parsearLetra('Por eso, la mas coherente es:\n\nB', 4), 1);
+  assert.equal(parsearLetra('Explico.\n**C**\n\nNo puedo confirmar el articulo exacto.', 4), 2);
+  assert.equal(parsearLetra('Verifica el texto vigente.\n\n**Respuesta tentativa: C**', 4), 2);
+  assert.equal(parsearLetra('Dudo entre dos.\n\n**A**\n\nAunque tambien podria ser:\n\n**B**', 4), 1); // gana la ultima
+  assert.equal(parsearLetra('No puedo confirmar cual de las opciones es correcta.', 4), null); // abstencion
+  assert.equal(parsearLetra('Razono.\n\n**E**', 4), null); // fuera de rango
+});

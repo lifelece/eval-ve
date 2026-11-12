@@ -1,7 +1,156 @@
 {
   "esquema_version": 1,
-  "fecha": null,
-  "juez": null,
-  "dominios": [],
-  "modelos": []
+  "fecha": "2026-11-12_060708",
+  "juez": "claude-haiku-5-5",
+  "dominios": [
+    "aduanas",
+    "mercantil",
+    "tributario"
+  ],
+  "modelos": [
+    {
+      "alias": "sonnet",
+      "proveedor": "anthropic",
+      "modelo_id": "claude-sonnet-5-5",
+      "fecha": "2026-11-12_060708",
+      "juez": "claude-haiku-5-5",
+      "preguntas": 150,
+      "validadas": 0,
+      "n": 150,
+      "respondidas": 150,
+      "cortada": false,
+      "abortada": null,
+      "exactitud": 0.8773584905660378,
+      "calidad": 0.48863636363636365,
+      "cita": 0.29545454545454547,
+      "alucinacion": 0.18181818181818182,
+      "puesto": 1,
+      "global": 0.7633333333333333,
+      "dominios": {
+        "aduanas": {
+          "valor": 0.69,
+          "puesto": 1,
+          "n": 50
+        },
+        "mercantil": {
+          "valor": 0.81,
+          "puesto": 1,
+          "n": 50
+        },
+        "tributario": {
+          "valor": 0.79,
+          "puesto": 1,
+          "n": 50
+        }
+      }
+    },
+    {
+      "alias": "haiku",
+      "proveedor": "anthropic",
+      "modelo_id": "claude-haiku-5-5",
+      "fecha": "2026-11-12_060708",
+      "juez": "claude-haiku-5-5",
+      "preguntas": 150,
+      "validadas": 0,
+      "n": 150,
+      "respondidas": 150,
+      "cortada": false,
+      "abortada": null,
+      "exactitud": 0.8207547169811321,
+      "calidad": 0.38636363636363635,
+      "cita": 0.06818181818181818,
+      "alucinacion": 0.06818181818181818,
+      "puesto": 2,
+      "global": 0.6933333333333334,
+      "dominios": {
+        "aduanas": {
+          "valor": 0.61,
+          "puesto": 2,
+          "n": 50
+        },
+        "mercantil": {
+          "valor": 0.75,
+          "puesto": 2,
+          "n": 50
+        },
+        "tributario": {
+          "valor": 0.72,
+          "puesto": 2,
+          "n": 50
+        }
+      }
+    },
+    {
+      "alias": "qwen",
+      "proveedor": "lmstudio",
+      "modelo_id": "qwen2.5:3b",
+      "fecha": "2026-11-12_060708",
+      "juez": "claude-haiku-5-5",
+      "preguntas": 150,
+      "validadas": 0,
+      "n": 150,
+      "respondidas": 150,
+      "cortada": false,
+      "abortada": null,
+      "exactitud": 0.6981132075471698,
+      "calidad": 0.09090909090909091,
+      "cita": 0.022727272727272728,
+      "alucinacion": 0.7954545454545454,
+      "puesto": 3,
+      "global": 0.52,
+      "dominios": {
+        "aduanas": {
+          "valor": 0.54,
+          "puesto": 3,
+          "n": 50
+        },
+        "mercantil": {
+          "valor": 0.52,
+          "puesto": 3,
+          "n": 50
+        },
+        "tributario": {
+          "valor": 0.5,
+          "puesto": 3,
+          "n": 50
+        }
+      }
+    },
+    {
+      "alias": "llama",
+      "proveedor": "lmstudio",
+      "modelo_id": "llama3.2:3b",
+      "fecha": "2026-11-12_060708",
+      "juez": "claude-haiku-5-5",
+      "preguntas": 150,
+      "validadas": 0,
+      "n": 150,
+      "respondidas": 150,
+      "cortada": false,
+      "abortada": null,
+      "exactitud": 0.6415094339622641,
+      "calidad": 0.10227272727272728,
+      "cita": 0.022727272727272728,
+      "alucinacion": 0.8409090909090909,
+      "puesto": 4,
+      "global": 0.48333333333333334,
+      "dominios": {
+        "aduanas": {
+          "valor": 0.52,
+          "puesto": 4,
+          "n": 50
+        },
+        "mercantil": {
+          "valor": 0.5,
+          "puesto": 4,
+          "n": 50
+        },
+        "tributario": {
+          "valor": 0.43,
+          "puesto": 4,
+          "n": 50
+        }
+      }
+    }
+  ]
 }
