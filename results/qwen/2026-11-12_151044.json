@@ -1,7 +1,7 @@
 {
   "esquema_version": 1,
   "aviso": "Benchmark de conocimiento normativo. NO es asesoria legal, fiscal ni aduanera. Ver DISCLAIMER.md.",
-  "fecha": "2026-11-12_060708",
+  "fecha": "2026-11-12_151044",
   "modelo": {
     "alias": "qwen",
     "proveedor": "lmstudio",
@@ -13,11 +13,11 @@
   },
   "dataset": {
     "archivo": "data/preguntas.jsonl",
-    "sha256": "16f6dda7752974dc42e92cae5a5160b9c5aee910e4517c8b186509843e04eb29",
+    "sha256": "0ee6736ac19fd1be6b1ed15a45f6ba7c56a46a82d1060cd575b6567c44bd264e",
     "preguntas": 150,
-    "validadas_por_luis": 0
+    "validadas_por_luis": 150
   },
-  "tope_usd": 5,
+  "tope_usd": 0.05,
   "gasto_corrida_usd": 0,
   "cortada_por_tope": false,
   "abortada": null,
